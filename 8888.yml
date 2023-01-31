@@ -1,0 +1,233 @@
+allow-lan: false
+bind-address: 127.0.0.1
+dns:
+  ake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 114.114.114.114
+    - 119.29.29.29
+    - 223.5.5.5
+  enable: true
+  enhanced-mode: redir-host
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+  ipv6: false
+  nameserver:
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
+    - https://doh.pub/dns-query
+  use-hosts: true
+external-controller: 127.0.0.1:19090
+log-level: warning
+mixed-port: 9981
+mode: rule
+proxies:
+  - name: 🇺🇸 theepicbrowser.com
+    type: http
+    server: theepicbrowser.com
+    port: "8888"
+    tls: true
+  - name: 🇺🇸backup.theepicbrowser.com
+    type: http
+    server: backup.theepicbrowser.com
+    port: "8888"
+    tls: true
+  - name: 🇺🇸use.theepicbrowser.com
+    type: http
+    server: use.theepicbrowser.com
+    port: "8888"
+    tls: true
+  - name: 🇺🇸use2.theepicbrowser.com
+    type: http
+    server: use2.theepicbrowser.com
+    port: "8888"
+    tls: true
+  - name: 🇺🇸use3.theepicbrowser.com
+    type: http
+    server: use3.theepicbrowser.com
+    port: "8888"
+    tls: true
+  - name: 🇺🇸usw.theepicbrowser.com
+    type: http
+    server: usw.theepicbrowser.com
+    port: "8888"
+    tls: true
+  - name: 🇺🇸usw2.theepicbrowser.com
+    type: http
+    server: usw2.theepicbrowser.com
+    port: "8888"
+    tls: true
+  - name: 🇩🇪de.theepicbrowser.com
+    type: http
+    server: de.theepicbrowser.com
+    port: "8888"
+    tls: true
+  - name: 🇩🇪de2.theepicbrowser.com
+    type: http
+    server: de2.theepicbrowser.com
+    port: "8888"
+    tls: true
+  - name: 🇨🇦ca.epicbrowser.net
+    type: http
+    server: ca.epicbrowser.net
+    port: "8888"
+    tls: true
+  - name: 🇨🇦ca2.epicbrowser.net
+    type: http
+    server: ca2.epicbrowser.net
+    port: "8888"
+    tls: true
+  - name: 🇫🇷fr.epicbrowser.net
+    type: http
+    server: fr.epicbrowser.net
+    port: "8888"
+    tls: true
+  - name: 🇫🇷fr2.epicbrowser.net
+    type: http
+    server: fr2.epicbrowser.net
+    port: "8888"
+    tls: true
+  - name: 🇬🇧uk.epicbrowser.net
+    type: http
+    server: uk.epicbrowser.net
+    port: "8888"
+    tls: true
+  - name: 🇬🇧uk2.epicbrowser.net
+    type: http
+    server: uk2.epicbrowser.net
+    port: "8888"
+    tls: true
+  - name: 🇳🇱ne.epicbrowser.net
+    type: http
+    server: ne.epicbrowser.net
+    port: "8888"
+    tls: true
+  - name: 🇳🇱ne2.epicbrowser.net
+    type: http
+    server: ne2.epicbrowser.net
+    port: "8888"
+    tls: true
+  - name: 🇸🇬sg.epicbrowser.net
+    type: http
+    server: sg.epicbrowser.net
+    port: "8888"
+    tls: true
+  - name: 🇸🇬sg2.epicbrowser.net
+    type: http
+    server: sg.epicbrowser.net
+    port: "8888"
+    tls: true
+  - name: 🇮🇳in.epicbrowser.net
+    type: http
+    server: in.epicbrowser.net
+    port: "8888"
+    tls: true
+  - name: 🇮🇳in2.epicbrowser.net
+    type: http
+    server: in2.epicbrowser.net
+    port: "8888"
+    tls: true
+proxy-groups:
+  - name: Ghelper
+    proxies:
+      - 全球智能
+      - 🇺🇸 theepicbrowser.com
+      - 🇺🇸backup.theepicbrowser.com
+      - 🇺🇸use.theepicbrowser.com
+      - 🇺🇸use2.theepicbrowser.com
+      - 🇺🇸use3.theepicbrowser.com
+      - 🇺🇸usw.theepicbrowser.com
+      - 🇺🇸usw2.theepicbrowser.com
+      - 🇩🇪de.theepicbrowser.com
+      - 🇩🇪de2.theepicbrowser.com
+      - 🇨🇦ca.epicbrowser.net
+      - 🇨🇦ca2.epicbrowser.net
+      - 🇫🇷fr.epicbrowser.net
+      - 🇫🇷fr2.epicbrowser.net
+      - 🇬🇧uk.epicbrowser.net
+      - 🇬🇧uk2.epicbrowser.net
+      - 🇳🇱ne.epicbrowser.net
+      - 🇳🇱ne2.epicbrowser.net
+      - 🇸🇬sg.epicbrowser.net
+      - 🇸🇬sg2.epicbrowser.net
+      - 🇮🇳in.epicbrowser.net
+      - 🇮🇳in2.epicbrowser.net
+    type: select
+  - interval: 3600
+    name: 全球智能
+    proxies:
+      - 🇺🇸 theepicbrowser.com
+      - 🇺🇸backup.theepicbrowser.com
+      - 🇺🇸use.theepicbrowser.com
+      - 🇺🇸use2.theepicbrowser.com
+      - 🇺🇸use3.theepicbrowser.com
+      - 🇺🇸usw.theepicbrowser.com
+      - 🇺🇸usw2.theepicbrowser.com
+      - 🇩🇪de.theepicbrowser.com
+      - 🇩🇪de2.theepicbrowser.com
+      - 🇨🇦ca.epicbrowser.net
+      - 🇨🇦ca2.epicbrowser.net
+      - 🇫🇷fr.epicbrowser.net
+      - 🇫🇷fr2.epicbrowser.net
+      - 🇬🇧uk.epicbrowser.net
+      - 🇬🇧uk2.epicbrowser.net
+      - 🇳🇱ne.epicbrowser.net
+      - 🇳🇱ne2.epicbrowser.net
+      - 🇸🇬sg.epicbrowser.net
+      - 🇸🇬sg2.epicbrowser.net
+      - 🇮🇳in.epicbrowser.net
+      - 🇮🇳in2.epicbrowser.net
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+rules:
+  - DOMAIN-SUFFIX,ip-api.com,DIRECT
+  - DOMAIN-SUFFIX,ipip.net,DIRECT
+  - DOMAIN-SUFFIX,ip138.com,DIRECT
+  - DOMAIN-SUFFIX,stunnel.vip,DIRECT
+  - DOMAIN-SUFFIX,gotochinatown.net,DIRECT
+  - DOMAIN-SUFFIX,ghelper.net,DIRECT
+  - DOMAIN-SUFFIX,ghelper.me,DIRECT
+  - DOMAIN-SUFFIX,ghelper.xyz,DIRECT
+  - DOMAIN-SUFFIX,ghelper.org,DIRECT
+  - DOMAIN-SUFFIX,fastapi.me,DIRECT
+  - DOMAIN-SUFFIX,vps315.com,DIRECT
+  - DOMAIN-SUFFIX,copyplay.net,DIRECT
+  - DOMAIN-SUFFIX,pickdown.net,DIRECT
+  - DOMAIN-KEYWORD,google,Ghelper
+  - DOMAIN-KEYWORD,youtube,Ghelper
+  - DOMAIN-SUFFIX,ggpht.com,Ghelper
+  - DOMAIN-SUFFIX,gmail.com,Ghelper
+  - DOMAIN-SUFFIX,gvt2.com,Ghelper
+  - DOMAIN-SUFFIX,gvt3.com,Ghelper
+  - DOMAIN-SUFFIX,chrome.com,Ghelper
+  - DOMAIN-SUFFIX,wikipedia.org,Ghelper
+  - DOMAIN-SUFFIX,wikimedia.org,Ghelper
+  - DOMAIN-SUFFIX,appspot.com,Ghelper
+  - DOMAIN-SUFFIX,android.com,Ghelper
+  - DOMAIN-SUFFIX,github.com,Ghelper
+  - DOMAIN-SUFFIX,gitbook.com,Ghelper
+  - DOMAIN-SUFFIX,kaggle.com,Ghelper
+  - DOMAIN-SUFFIX,arxiv.org,Ghelper
+  - DOMAIN-SUFFIX,wiktionary.org,Ghelper
+  - DOMAIN-SUFFIX,blogger.com,Ghelper
+  - DOMAIN-SUFFIX,youtu.be,Ghelper
+  - DOMAIN-SUFFIX,ytimg.com,Ghelper
+  - DOMAIN-SUFFIX,youtube.com,Ghelper
+  - DOMAIN-SUFFIX,instagram.com,Ghelper
+  - DOMAIN-SUFFIX,twitter.com,Ghelper
+  - DOMAIN-SUFFIX,t.co,Ghelper
+  - DOMAIN-SUFFIX,facebook.com,Ghelper
+  - DOMAIN-SUFFIX,telegram.org,Ghelper
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,172.23.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR6,::1/128,DIRECT
+  - IP-CIDR6,fc00::/7,DIRECT
+  - IP-CIDR6,fe80::/10,DIRECT
+  - IP-CIDR6,fd00::/8,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,Ghelper
