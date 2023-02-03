@@ -117,7 +117,7 @@ proxies:
     tls: true
   - name: "🇺🇸美國加州 : 洛杉磯 3310"
     type: http
-    server: 8673c093-rpgn40-run29n-7q16.chromeapi.net
+    server: 6ba2bd64-rpmtc0-run29n-7q16.chromeapi.net
     port: "3310"
     tls: true
   - name: "🇺🇸美國西岸 : 洛杉磯2 443"
