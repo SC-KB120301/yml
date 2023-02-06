@@ -35,104 +35,104 @@ proxies:
     obfs-param: ""
   - name: "🇭🇰香港商寬2 : 香港HKBN 1120"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "1120"
     tls: true
   - name: "🇭🇰香港商寬 : 香港HKT 2128"
     type: http
-    server: c5069531-rpmtc0-run29n-7q16.alrihla.net
+    server: cc70b702-rprr40-run29n-7q16.alrihla.net
     port: "2128"
     tls: true
   - name: "🇹🇼中國台灣 : 台北 2330"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "2330"
     tls: true
     _index: 3
   - name: "🇯🇵日本綜合 : 東京 2340"
     type: http
-    server: 19a72e16-rpmtc0-run29n-7q16.jp.p1pv.com
+    server: a705a969-rprr40-run29n-7q16.jp.p1pv.com
     port: "2340"
     tls: true
   - name: "🇬🇧英國 : 南安普敦 2350"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "2350"
     tls: true
   - name: "🇩🇪德國 : 慕尼黑 2360"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "2360"
     tls: true
   - name: "🇫🇷法國 : 巴黎 2370"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "2370"
     tls: true
   - name: "🇹🇷土耳其 : 伊斯坦布爾 2380"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "2380"
     tls: true
     _index: 8
   - name: "🇰🇷韩國 : 首爾 2390"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "2390"
     tls: true
   - name: "🇸🇬新加坡 : 新加坡 2400"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "2400"
     tls: true
   - name: "🇳🇿新西兰 : 奧尅蘭 2410"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "2410"
     tls: true
   - name: "🇦🇺澳大利亞 : 悉尼 2412"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "2412"
     tls: true
   - name: "🇷🇺俄羅斯 : 聖彼得堡 2420"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "2420"
     tls: true
   - name: "🇮🇳印度 : 孟買 2430"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "2430"
     tls: true
   - name: "🇯🇵日本原生 : 大阪 2440"
     type: http
-    server: 26a8c23c-rpm740-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "2440"
     tls: true
-  - name: "🇺🇸美國專線 : 洛杉磯10G 3228"
+  - name: "🇺🇸美國專線 : 洛杉磯10G 443"
     type: http
-    server: 8ce80a93-rpmtc0-run29n-7q16.on1t.com
-    port: "3228"
+    server: 0739e6ca-rprr40-run29n-7q16.on1t.com
+    port: "443"
     tls: true
   - name: "🇺🇸美國加州 : 洛杉磯 3310"
     type: http
-    server: 6ba2bd64-rpmtc0-run29n-7q16.chromeapi.net
+    server: 3da49e4e-rprr40-run29n-7q16.chromeapi.net
     port: "3310"
     tls: true
   - name: "🇺🇸美國西岸 : 洛杉磯2 443"
     type: http
-    server: fdbf2031-rpmtc0-run29n-7q16.copydesign.net
+    server: 80608074-rprr40-run29n-7q16.copydesign.net
     port: "443"
     tls: true
   - name: "🇺🇸美国丹佛 : 丹佛10G 5228"
     type: http
-    server: 80983974-rpm740-run29n-7q16.denver.jy3p.com
+    server: 54e11665-rprr40-run29n-7q16.denver.jy3p.com
     port: "5228"
     tls: true
   - name: "🇭🇰香港精品 : 香港10G 5228"
     type: http
-    server: 4cbccde9-rpm740-run29n-7q16.sphinxsearch.net
+    server: 48c4ecff-rprr40-run29n-7q16.sphinxsearch.net
     port: "5228"
     tls: true
   - name: 🇩🇪德國 5228
@@ -178,7 +178,7 @@ proxy-groups:
       - "🇮🇳印度 : 孟買 2430"
       - "🇯🇵日本原生 : 大阪 2440"
       - "🇺🇸美國加州 : 洛杉磯 3310"
-      - "🇺🇸美國專線 : 洛杉磯10G 3228"
+      - "🇺🇸美國專線 : 洛杉磯10G 443"
       - "🇺🇸美國西岸 : 洛杉磯2 443"
       - "🇺🇸美国丹佛 : 丹佛10G 5228"
       - "🇭🇰香港精品 : 香港10G 5228"
@@ -190,7 +190,7 @@ proxy-groups:
     name: 全球智能
     proxies:
       - 🇫🇷法国SSR
-      - "🇺🇸美國專線 : 洛杉磯10G 3228"
+      - "🇺🇸美國專線 : 洛杉磯10G 443"
       - "🇫🇷法國 : 巴黎 2370"
       - "🇹🇷土耳其 : 伊斯坦布爾 2380"
       - "🇰🇷韩國 : 首爾 2390"
