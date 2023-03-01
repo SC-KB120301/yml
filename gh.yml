@@ -142,6 +142,11 @@ proxies:
     server: c9de0aaa-rqycg0-run29n-7q16.chromeapi.net
     port: "3310"
     tls: true
+  - name: "🇧🇷 巴西 : 圣保罗 3380"
+    type: http
+    server: c9de0aaa-rqycg0-run29n-7q16.chromeapi.net
+    port: "3380"
+    tls: true
   - name: "🇺🇸美国丹佛 : 丹佛10G 5228"
     type: http
     server: 505a42f6-rqyyo0-run29n-7q16.denver.jy3p.com
@@ -180,6 +185,8 @@ proxy-groups:
       - 香港智能
       - 🇫🇷法国SSR
       - 🇦🇷 阿根廷 VIP
+      - "🇺🇸美國專線 : 洛杉磯10G 443"
+      - "🇺🇸美國西岸 : 洛杉磯2 443"
       - "🇭🇰香港商寬2 : 香港HKBN 1120"
       - "🇭🇰香港商寬 : 香港HKT 2128"
       - 🇭🇰未知 pyboard.net:2128
@@ -197,8 +204,7 @@ proxy-groups:
       - "🇮🇳印度 : 孟買 2430"
       - "🇯🇵日本原生 : 大阪 2440"
       - "🇺🇸美國加州 : 洛杉磯 3310"
-      - "🇺🇸美國專線 : 洛杉磯10G 443"
-      - "🇺🇸美國西岸 : 洛杉磯2 443"
+      - "🇧🇷 巴西 : 圣保罗 3380"
       - "🇺🇸美国丹佛 : 丹佛10G 5228"
       - "🇭🇰香港精品 : 香港10G 5228"
       - 🇩🇪德國 5228
@@ -227,6 +233,7 @@ proxy-groups:
       - "🇬🇧英國 : 南安普敦 2350"
       - "🇩🇪德國 : 慕尼黑 2360"
       - "🇺🇸美國加州 : 洛杉磯 3310"
+      - "🇧🇷 巴西 : 圣保罗 3380"
       - "🇺🇸美國西岸 : 洛杉磯2 443"
       - "🇺🇸美国丹佛 : 丹佛10G 5228"
       - "🇭🇰香港精品 : 香港10G 5228"
@@ -297,3 +304,4 @@ rules:
   - IP-CIDR6,fd00::/8,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,Ghelper
+
