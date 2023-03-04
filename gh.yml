@@ -56,7 +56,7 @@ proxies:
     _index: 3
   - name: 🇭🇰未知 pyboard.net:2128
     type: http
-    server: d48148bb-rqycg0-run29n-7q16.pyboard.net
+    server: 2c6d1341-rr4io0-run29n-7q16.pyboard.net
     port: "2128"
     tls: true
   - name: "🇹🇼中國台灣 : 台北 2330"
@@ -150,7 +150,7 @@ proxies:
     tls: true
   - name: "🇺🇸美国丹佛 : 丹佛10G 5228"
     type: http
-    server: 505a42f6-rqyyo0-run29n-7q16.denver.jy3p.com
+    server: 4934e5e9-rr4io0-run29n-7q16.denver.jy3p.com
     port: "5228"
     tls: true
   - name: "🇭🇰香港精品 : 香港10G 5228"
