@@ -70,7 +70,7 @@ proxies:
     tls: true
   - name: "🇭🇰香港商寬 : 香港HKT 2128"
     type: http
-    server: 791a4904-rsahs0-rzdfln-7q16.alrihla.net
+    server: 7e6ef273-rsgo00-rzdfln-7q16.alrihla.net
     port: "2128"
     tls: true
     _index: 3
