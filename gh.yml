@@ -113,7 +113,7 @@ proxies:
     tls: true
   - name: "🇸🇬新加坡 : 新加坡 2400"
     type: http
-    server: 88e8fdb6-rst0g0-rzdfln-7q16.chromeapi.net
+    server: 72ccd006-rst0g0-rzdfln-7q16.j2ai.com
     port: "2400"
     tls: true
   - name: "🇳🇿新西兰 : 奧尅蘭 2410"
