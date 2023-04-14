@@ -269,6 +269,7 @@ proxy-groups:
 rules:
   - DOMAIN-SUFFIX,ip-api.com,DIRECT
   - DOMAIN-SUFFIX,ipip.net,DIRECT
+  - DOMAIN-SUFFIX,myds.me,DIRECT
   - DOMAIN-SUFFIX,ip138.com,DIRECT
   - DOMAIN-SUFFIX,stunnel.vip,DIRECT
   - DOMAIN-SUFFIX,gotochinatown.net,DIRECT
