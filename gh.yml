@@ -128,7 +128,7 @@ proxies:
     tls: true
   - name: "🇷🇺俄羅斯 : 聖彼得堡 2420"
     type: http
-    server: 41466f84-rt44g0-rzdfln-7q16.chromeapi.net
+    server: e7844d9e-rt7ts0-rzdfln-7q16.j2ai.com
     port: "2420"
     tls: true
   - name: "🇮🇳印度 : 孟買 2430"
