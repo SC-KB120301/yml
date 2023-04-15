@@ -47,6 +47,11 @@ proxies:
     obfs: tls1.2_ticket_auth
     protocol-param: ""
     obfs-param: ""
+  - name: " ChatGPT测试：443"
+    type: http
+    server: aba257e0-rt9og0-rzdfln-7q16.uk.n7ai.com
+    port: "443"
+    tls: true
   - name: "🇺🇸美國專線 : 洛杉磯10G 443"
     type: http
     server: 074b16c8-rt9og0-rzdfln-7q16.on1t.com
@@ -196,6 +201,7 @@ proxy-groups:
       - 香港智能
       - 🇫🇷法国SSR
       - 🇦🇷 阿根廷 VIP
+      - " ChatGPT测试：443"
       - "🇺🇸美國專線 : 洛杉磯10G 443"
       - "🇺🇸美國西岸 : 洛杉磯2 443"
       - "🇺🇸美國硅谷 : 硅谷:443"
@@ -226,6 +232,7 @@ proxy-groups:
   - interval: 3600
     name: 全球智能
     proxies:
+      - " ChatGPT测试：443"
       - 🇫🇷法国SSR
       - 🇦🇷 阿根廷 VIP
       - "🇺🇸美國專線 : 洛杉磯10G 443"
