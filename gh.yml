@@ -55,85 +55,85 @@ proxies:
     _index: 18
   - name: "🇺🇸美國硅谷 : 硅谷:443"
     type: http
-    server: e5c65b06-rtvwg0-rzdfln-7q16.sj.jy3p.com
+    server: 9a872116-rtzls0-rzdfln-7q16.sj.jy3p.com
     port: "443"
     tls: true
   - name: "🇺🇸美國西岸 : 洛杉磯2 443"
     type: http
-    server: 4e2447e1-rtvwg0-rzdfln-7q16.copydesign.net
+    server: 12e4c782-rtzls0-rzdfln-7q16.copydesign.net
     port: "443"
     tls: true
   - name: " ChatGPT测试：443"
     type: http
-    server: e7703e01-rtvwg0-rzdfln-7q16.uk.n7ai.com
+    server: b8a64398-rtzls0-rzdfln-7q16.uk.n7ai.com
     port: "443"
     tls: true
   - name: 测试 1044
     type: http
-    server: e1586632-rtvwg0-rzdfln-7q16.uk.z7zi.com
+    server: 67228287-rtzls0-rzdfln-7q16.uk.z7zi.com
     port: "1044"
     tls: true
   - name: "🇭🇰香港商寬2 : 香港HKBN 1120"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "1120"
     tls: true
   - name: "🇭🇰香港商寬 : 香港HKT 2128"
     type: http
-    server: 91e03efa-rtvwg0-rzdfln-7q16.alrihla.net
+    server: 01992e5b-rtzls0-rzdfln-7q16.alrihla.net
     port: "2128"
     tls: true
     _index: 3
   - name: "🇹🇼中國台灣 : 台北 2330"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "2330"
     tls: true
     _index: 3
   - name: "🇯🇵日本綜合 : 東京 2340"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "2340"
     tls: true
   - name: "🇬🇧英國 : 南安普敦 2350"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "2350"
     tls: true
   - name: "🇩🇪德國 : 慕尼黑 2360"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "2360"
     tls: true
   - name: "🇫🇷法國 : 巴黎 2370"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "2370"
     tls: true
   - name: "🇹🇷土耳其 : 伊斯坦布爾 2380"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "2380"
     tls: true
     _index: 8
   - name: "🇰🇷韩國 : 首爾 2390"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "2390"
     tls: true
   - name: "🇸🇬新加坡 : 新加坡 2400"
     type: http
-    server: ac512fa2-rtvwg0-rzdfln-7q16.j2ai.com
+    server: d975bfe3-rtzls0-rzdfln-7q16.j2ai.com
     port: "2400"
     tls: true
   - name: "🇳🇿新西兰 : 奧尅蘭 2410"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "2410"
     tls: true
   - name: "🇦🇺澳大利亞 : 悉尼 2412"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "2412"
     tls: true
   - name: "🇷🇺俄羅斯 : 聖彼得堡 2420"
@@ -143,22 +143,22 @@ proxies:
     tls: true
   - name: "🇮🇳印度 : 孟買 2430"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "2430"
     tls: true
   - name: "🇯🇵日本原生 : 大阪 2440"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "2440"
     tls: true
   - name: "🇺🇸美國加州 : 洛杉磯 3310"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "3310"
     tls: true
   - name: "🇧🇷 巴西 : 圣保罗 3380"
     type: http
-    server: 32b46062-rtvwg0-rzdfln-7q16.chromeapi.net
+    server: 2b8cacee-rtzls0-rzdfln-7q16.chromeapi.net
     port: "3380"
     tls: true
   - name: "🇺🇸美国丹佛 : 丹佛10G 5228"
@@ -168,7 +168,7 @@ proxies:
     tls: true
   - name: "🇭🇰香港精品 : 香港10G 5228"
     type: http
-    server: efb9abea-rtvwg0-rzdfln-7q16.sphinxsearch.net
+    server: 529fb1eb-rtzls0-rzdfln-7q16.sphinxsearch.net
     port: "5228"
     tls: true
   - name: 🇩🇪德國 443
