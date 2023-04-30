@@ -49,7 +49,7 @@ proxies:
     obfs-param: ""
   - name: "🇺🇸美國專線 : 洛杉磯10G 443"
     type: http
-    server: 5ee83789-rtvwg0-rzdfln-7q16.on1t.com
+    server: 3b90b693-ru1gg0-rzdfln-7q16.on1t.com
     port: "443"
     tls: true
     _index: 18
@@ -180,8 +180,8 @@ proxies:
     tls: true
   - name: 🇺🇸美国丹佛 443
     type: http
-    server: 9ce95890-rsccg0-7q16.denver.p1pv.com
-    port: "443"
+    server: b9ae9745-ru1gg0-rzdfln-7q16.j2ai.com
+    port: "3310"
     username: eb13980206608@gmail.com
     password: a5f15204-e777-11ed-8d3b-f23c91369f2d
     tls: true
