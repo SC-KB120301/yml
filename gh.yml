@@ -176,28 +176,28 @@ proxies:
     server: 7q16.de.p5pv.com
     port: "443"
     username: eb13980206608@gmail.com
-    password: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    password: a5f15204-e777-11ed-8d3b-f23c91369f2d
     tls: true
   - name: 🇺🇸美国丹佛 443
     type: http
     server: 9ce95890-rsccg0-7q16.denver.p1pv.com
     port: "443"
     username: eb13980206608@gmail.com
-    password: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    password: a5f15204-e777-11ed-8d3b-f23c91369f2d
     tls: true
   - name: 🇭🇰香港WTT3 22443
     type: http
     server: 7q16.wtt5.p5pv.com
     port: "22443"
     username: eb13980206608@gmail.com
-    password: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    password: a5f15204-e777-11ed-8d3b-f23c91369f2d
     tls: true
   - name: 🇹🇼中國台北 61234
     type: http
     server: f985eb3c-rp4ao0-7q16.tw4.tcpbbr.net
     port: "61234"
     username: eb13980206608@gmail.com
-    password: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    password: a5f15204-e777-11ed-8d3b-f23c91369f2d
     tls: true
 proxy-groups:
   - name: Ghelper
