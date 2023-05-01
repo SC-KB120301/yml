@@ -101,21 +101,21 @@ proxies:
       Host: www.hgcbroadband.com
     ws-path: /
   - name: 美國丹佛
-    password: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    password: a5f15204-e777-11ed-8d3b-f23c91369f2d
     port: 443
     server: 03ac0063-ru55s0-7q16.denver.p1pv.com
     tls: true
     type: http
     username: eb13980206608@gmail.com
   - name: 台灣
-    password: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    password: a5f15204-e777-11ed-8d3b-f23c91369f2d
     port: 61234
     server: 03ac0063-ru55s0-7q16.tw4.tcpbbr.net
     tls: true
     type: http
     username: eb13980206608@gmail.com
   - name: 德國
-    password: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    password: a5f15204-e777-11ed-8d3b-f23c91369f2d
     port: 443
     server: 03ac0063-ru55s0-7q16.de.p5pv.com
     tls: true
