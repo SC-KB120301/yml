@@ -30,7 +30,7 @@ proxies:
     port: 80
     server: hkt.comefromchinatown.com
     type: vmess
-    uuid: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    uuid: a5f15204-e777-11ed-8d3b-f23c91369f2d
     ws-headers:
       Host: broadcastlv.chat.bilibili.com
     ws-path: /
@@ -41,7 +41,7 @@ proxies:
     port: 80
     server: 03ac0063-ru55s0-7q16.hkt.gotochinatown.net
     type: vmess
-    uuid: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    uuid: a5f15204-e777-11ed-8d3b-f23c91369f2d
     ws-headers:
       Host: broadcastlv.chat.bilibili.com
     ws-path: /
@@ -52,7 +52,7 @@ proxies:
     port: 80
     server: 03ac0063-ru55s0-7q16.hgc1.tcpbbr.net
     type: vmess
-    uuid: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    uuid: a5f15204-e777-11ed-8d3b-f23c91369f2d
     ws-headers:
       Host: www.hgcbroadband.com
     ws-path: /
@@ -63,7 +63,7 @@ proxies:
     port: 80
     server: wtt2.comefromchinatown.com
     type: vmess
-    uuid: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    uuid: a5f15204-e777-11ed-8d3b-f23c91369f2d
     ws-headers:
       Host: images-eu.ssl-images-amazon.com
     ws-path: /
@@ -74,7 +74,7 @@ proxies:
     port: 80
     server: 03ac0063-ru55s0-7q16.bn.p5pv.com
     type: vmess
-    uuid: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    uuid: a5f15204-e777-11ed-8d3b-f23c91369f2d
     ws-headers:
       Host: broadcastlv.chat.bilibili.com
     ws-path: /
@@ -85,7 +85,7 @@ proxies:
     port: 80
     server: 03ac0063-ru55s0-7q16.sj.comefromchinatown.com
     type: vmess
-    uuid: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    uuid: a5f15204-e777-11ed-8d3b-f23c91369f2d
     ws-headers:
       Host: broadcastlv.chat.bilibili.com
     ws-path: /
@@ -96,28 +96,28 @@ proxies:
     port: 80
     server: 03ac0063-ru55s0-7q16.static.tcpbbr.net
     type: vmess
-    uuid: f6afae82-d451-11ec-bb74-f23c9164ca5d
+    uuid: a5f15204-e777-11ed-8d3b-f23c91369f2d
     ws-headers:
       Host: www.hgcbroadband.com
     ws-path: /
   - name: 美國丹佛
     password: a5f15204-e777-11ed-8d3b-f23c91369f2d
     port: 443
-    server: 03ac0063-ru55s0-7q16.denver.p1pv.com
+    server: d910d178-ruckg0-7q16.denver.p1pv.com
     tls: true
     type: http
     username: eb13980206608@gmail.com
   - name: 台灣
     password: a5f15204-e777-11ed-8d3b-f23c91369f2d
     port: 61234
-    server: 03ac0063-ru55s0-7q16.tw4.tcpbbr.net
+    server: d910d178-ruckg0-7q16.tw4.tcpbbr.net
     tls: true
     type: http
     username: eb13980206608@gmail.com
   - name: 德國
     password: a5f15204-e777-11ed-8d3b-f23c91369f2d
     port: 443
-    server: 03ac0063-ru55s0-7q16.de.p5pv.com
+    server: d910d178-ruckg0-7q16.de.p5pv.com
     tls: true
     type: http
     username: eb13980206608@gmail.com
