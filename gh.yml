@@ -199,6 +199,18 @@ proxies:
     username: eb13980206608@gmail.com
     password: a5f15204-e777-11ed-8d3b-f23c91369f2d
     tls: true
+  - name: 🇺🇸美國 80
+    type: vmess
+    server: 192.203.230.86
+    port: "80"
+    uuid: a442dacf-cbb3-488a-9744-61494ea38630
+    alterId: "0"
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: us-1.acyun.cf
 proxy-groups:
   - name: Ghelper
     proxies:
@@ -206,6 +218,7 @@ proxy-groups:
       - 香港智能
       - 🇫🇷法国SSR
       - 🇦🇷 阿根廷 VIP
+      - 🇺🇸美國 80
       - " ChatGPT测试：443"
       - "🇺🇸美國專線 : 洛杉磯10G 443"
       - "🇺🇸美國西岸 : 洛杉磯2 443"
@@ -238,6 +251,7 @@ proxy-groups:
   - interval: 3600
     name: 全球智能
     proxies:
+      - 🇺🇸美國 80
       - " ChatGPT测试：443"
       - 🇫🇷法国SSR
       - 🇦🇷 阿根廷 VIP
