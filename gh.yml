@@ -55,7 +55,7 @@ proxies:
     _index: 18
   - name: "🇺🇸美國硅谷 : 硅谷:443"
     type: http
-    server: 45ef0ed7-ru55s0-rzdfln-7q16.sj.jy3p.com
+    server: a76cdf0d-rug9s0-rzdfln-7q16.sj.jy3p.com
     port: "443"
     tls: true
   - name: "🇺🇸美國西岸 : 洛杉磯2 443"
@@ -123,7 +123,7 @@ proxies:
     tls: true
   - name: "🇸🇬新加坡 : 新加坡 2400"
     type: http
-    server: cef58924-ru55s0-rzdfln-7q16.j2ai.com
+    server: c0448747-rug9s0-rzdfln-7q16.j2ai.com
     port: "2400"
     tls: true
   - name: "🇳🇿新西兰 : 奧尅蘭 2410"
@@ -153,7 +153,7 @@ proxies:
     tls: true
   - name: "🇺🇸美國加州 : 洛杉磯 3310"
     type: http
-    server: cef58924-ru55s0-rzdfln-7q16.j2ai.com
+    server: c0448747-rug9s0-rzdfln-7q16.j2ai.com
     port: "3310"
     tls: true
   - name: "🇧🇷 巴西 : 圣保罗 3380"
