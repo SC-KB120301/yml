@@ -138,7 +138,7 @@ proxies:
     tls: true
   - name: "🇷🇺俄羅斯 : 聖彼得堡 1007"
     type: http
-    server: b886a95f-ru55s0-rzdfln-7q16.ru.z7zi.com
+    server: 14e9381f-rui4g0-rzdfln-7q16.ru.z7zi.com
     port: "1007"
     tls: true
   - name: "🇮🇳印度 : 孟買 2430"
