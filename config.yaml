@@ -101,7 +101,7 @@ proxies:
     tls: true
   - name: "🇭🇰香港商寬2 : 香港HKBN 1120"
     type: http
-    server: 7c7eff40-runog0-rzdfln-7q16.chromeapi.ne
+    server: 879cfe40-rupj40-rzdfln-7q16.chromeapi.net
     port: "1120"
     tls: true
   - name: "🇭🇰香港商寬 : 香港HKT 2128"
@@ -112,13 +112,13 @@ proxies:
     _index: 3
   - name: "🇹🇼中國台灣 : 台北 2330"
     type: http
-    server: 7c7eff40-runog0-rzdfln-7q16.chromeapi.ne
+    server: 879cfe40-rupj40-rzdfln-7q16.chromeapi.net
     port: "2330"
     tls: true
     _index: 3
   - name: "🇸🇬新加坡 : 新加坡 2400"
     type: http
-    server: 3971e28d-rujz40-rzdfln-7q16.j2ai.com
+    server: b826829e-rupj40-rzdfln-7q16.j2ai.com
     port: "2400"
     tls: true
   - name: "🇺🇸美國加州 : 洛杉磯 3310"
