@@ -1,4 +1,4 @@
-mixed-port: 7890
+mixed-port: 7893
 allow-lan: true
 bind-address: "*"
 authentication:
