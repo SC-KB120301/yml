@@ -49,9 +49,8 @@ proxies:
     alterId: "2"
     cipher: auto
     network: ws
-    ws-headers:
-    Host: www.hgcbroadband.com
-  ws-path: /
+    ws-opts:
+      path: /
 proxy-groups:
   - name: Ghelper
     proxies:
