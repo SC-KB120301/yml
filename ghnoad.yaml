@@ -43,7 +43,7 @@ proxies:
     tls: true
   - name: "🇺🇸美國加州 : 洛杉磯 80"
     type: vmess
-    server: 7536af79-rv6740-7q16.static.tcpbbr.net
+    server: 93a665da-rvmv40-7q16.static.tcpbbr.net
     port: "80"
     uuid: e9ed3e80-e954-11ed-8d3b-f23c91369f2d
     alterId: "2"
