@@ -35,7 +35,7 @@ proxies:
     server: 812a4f05-rwk740-rzdfln-7q16.on1t.com
     port: "443"
     tls: true
-    _index: 18
+    _index: 0
   - name: "🇺🇸美國西岸 : 洛杉磯2 443"
     type: http
     server: 8e089641-rwk740-rzdfln-7q16.copydesign.net
@@ -51,6 +51,20 @@ proxies:
     network: ws
     ws-opts:
       path: /
+  - name: 中国台湾 61234
+    type: http
+    server: 13930a29-rwtgg0-7q16.tw4.tcpbbr.net
+    port: "61234"
+    username: eb13980206608@gmail.com
+    password: e9ed3e80-e954-11ed-8d3b-f23c91369f2d
+    tls: true
+  - name: 德国 443
+    type: http
+    server: 13930a29-rwtgg0-7q16.de.p5pv.com
+    port: "443"
+    username: eb13980206608@gmail.com
+    password: e9ed3e80-e954-11ed-8d3b-f23c91369f2d
+    tls: true
 proxy-groups:
   - name: Ghelper
     proxies:
@@ -58,6 +72,8 @@ proxy-groups:
       - "🇺🇸美國專線 : 洛杉磯10G 443"
       - "🇺🇸美國西岸 : 洛杉磯2 443"
       - "🇺🇸美國加州 : 洛杉磯 80"
+      - 德国 443
+      - 中国台湾 61234
     type: select
   - interval: 3600
     name: 全球智能
@@ -65,6 +81,8 @@ proxy-groups:
       - "🇺🇸美國專線 : 洛杉磯10G 443"
       - "🇺🇸美國加州 : 洛杉磯 80"
       - "🇺🇸美國西岸 : 洛杉磯2 443"
+      - 德国 443
+      - 中国台湾 61234
     type: url-test
     url: http://www.gstatic.com/generate_204
 rules:
