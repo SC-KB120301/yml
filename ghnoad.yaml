@@ -32,13 +32,13 @@ dns:
 proxies:
   - name: "🇺🇸美國專線 : 洛杉磯10G 443"
     type: http
-    server: 812a4f05-rwk740-rzdfln-7q16.on1t.com
+    server: 2709b916-rwnwg0-rzdfln-7q16.on1t.com
     port: "443"
     tls: true
     _index: 0
   - name: "🇺🇸美國西岸 : 洛杉磯2 443"
     type: http
-    server: 8e089641-rwk740-rzdfln-7q16.copydesign.net
+    server: a892afe7-rwnwg0-rzdfln-7q16.copydesign.net
     port: "443"
     tls: true
   - name: "🇺🇸美國加州 : 洛杉磯 80"
