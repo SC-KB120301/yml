@@ -60,7 +60,7 @@ proxies:
     tls: true
   - name: 德国 443
     type: http
-    server: 13930a29-rwtgg0-7q16.de.p5pv.com
+    server: 7ef7104d-rwz0g0-7q16.de.p5pv.com
     port: "443"
     username: eb13980206608@gmail.com
     password: e9ed3e80-e954-11ed-8d3b-f23c91369f2d
