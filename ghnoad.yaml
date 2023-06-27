@@ -1,9 +1,9 @@
 mixed-port: 7893
 allow-lan: true
 bind-address: "*"
-authentication:
-  - admin:901203
-  - admin:901203
+# authentication:
+# - admin:901203
+# - admin:901203
 mode: rule
 log-level: info
 external-controller: 127.0.0.1:9090
