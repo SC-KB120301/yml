@@ -1,0 +1,170 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: false
+  ipv6: false
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback:
+    - https://doh.dns.sb/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.twnic.tw/dns-query
+    - tls://8.8.4.4:853
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+proxies:
+  - name: 香港WTT3 22443
+    type: http
+    server: 144d1dd9-rxoxs0-7q16.wtt5.p5pv.com
+    port: "22443"
+    username: eb13980206608@gmail.com
+    password: e9ed3e80-e954-11ed-8d3b-f23c91369f2d
+    tls: true
+  - name: 台灣 61234
+    type: http
+    server: 144d1dd9-rxoxs0-7q16.tw4.tcpbbr.net
+    port: "61234"
+    username: eb13980206608@gmail.com
+    password: e9ed3e80-e954-11ed-8d3b-f23c91369f2d
+    tls: true
+  - name: 🇫🇷法国SSR
+    server: fr-am1-5.eqsunshine.com
+    port: 8181
+    type: ssr
+    cipher: aes-256-cfb
+    password: RcfVcDzzB
+    protocol: origin
+    obfs: tls1.2_ticket_auth
+    protocol-param: ""
+    obfs-param: ""
+  - name: 移动
+    type: http
+    server: v6.sckb1203.xyz
+    port: "7893"
+    username: admin
+    password: "901203"
+  - name: 联通
+    type: http
+    server: kb1203.myds.me
+    port: "7893"
+    username: admin
+    password: "901203"
+  - name: 电信
+    type: http
+    server: kb1202.myds.me
+    port: "7893"
+    username: admin
+    password: "901203"
+  - name: CMCC
+    type: socks5
+    server: v6.sckb1203.xyz
+    port: "7893"
+    username: admin
+    password: "901203"
+  - name: CUCC
+    type: socks5
+    server: kb1203.myds.me
+    port: "7893"
+    username: admin
+    password: "901203"
+  - name: CTCC
+    type: socks5
+    server: kb1202.myds.me
+    port: "7893"
+    username: admin
+    password: "901203"
+proxy-groups:
+  - name: Ghelper
+    proxies:
+      - 全球智能
+      - 香港WTT3 22443
+      - 台灣 61234
+      - 🇫🇷法国SSR
+      - CTCC
+      - 电信
+      - CUCC
+      - 联通
+      - CMCC
+      - 移动
+    type: select
+  - interval: 3600
+    name: 全球智能
+    proxies:
+      - 香港WTT3 22443
+      - 🇫🇷法国SSR
+      - 台灣 61234
+      - CTCC
+      - 电信
+      - CUCC
+      - 联通
+      - CMCC
+      - 移动
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+rules:
+  - DOMAIN-SUFFIX,ip-api.com,DIRECT
+  - DOMAIN-SUFFIX,ipip.net,DIRECT
+  - DOMAIN-SUFFIX,myds.me,DIRECT
+  - DOMAIN-SUFFIX,ip138.com,DIRECT
+  - DOMAIN-SUFFIX,stunnel.vip,DIRECT
+  - DOMAIN-SUFFIX,gotochinatown.net,DIRECT
+  - DOMAIN-SUFFIX,ghelper.net,DIRECT
+  - DOMAIN-SUFFIX,ghelper.me,DIRECT
+  - DOMAIN-SUFFIX,ghelper.xyz,DIRECT
+  - DOMAIN-SUFFIX,ghelper.org,DIRECT
+  - DOMAIN-SUFFIX,fastapi.me,DIRECT
+  - DOMAIN-SUFFIX,vps315.com,DIRECT
+  - DOMAIN-SUFFIX,copyplay.net,DIRECT
+  - DOMAIN-SUFFIX,pickdown.net,DIRECT
+  - DOMAIN-KEYWORD,google,Ghelper
+  - DOMAIN-KEYWORD,youtube,Ghelper
+  - DOMAIN-SUFFIX,ggpht.com,Ghelper
+  - DOMAIN-SUFFIX,gmail.com,Ghelper
+  - DOMAIN-SUFFIX,gvt2.com,Ghelper
+  - DOMAIN-SUFFIX,gvt3.com,Ghelper
+  - DOMAIN-SUFFIX,chrome.com,Ghelper
+  - DOMAIN-SUFFIX,wikipedia.org,Ghelper
+  - DOMAIN-SUFFIX,wikimedia.org,Ghelper
+  - DOMAIN-SUFFIX,appspot.com,Ghelper
+  - DOMAIN-SUFFIX,android.com,Ghelper
+  - DOMAIN-SUFFIX,github.com,Ghelper
+  - DOMAIN-SUFFIX,gitbook.com,Ghelper
+  - DOMAIN-SUFFIX,kaggle.com,Ghelper
+  - DOMAIN-SUFFIX,arxiv.org,Ghelper
+  - DOMAIN-SUFFIX,wiktionary.org,Ghelper
+  - DOMAIN-SUFFIX,blogger.com,Ghelper
+  - DOMAIN-SUFFIX,youtu.be,Ghelper
+  - DOMAIN-SUFFIX,ytimg.com,Ghelper
+  - DOMAIN-SUFFIX,youtube.com,Ghelper
+  - DOMAIN-SUFFIX,instagram.com,Ghelper
+  - DOMAIN-SUFFIX,twitter.com,Ghelper
+  - DOMAIN-SUFFIX,t.co,Ghelper
+  - DOMAIN-SUFFIX,facebook.com,Ghelper
+  - DOMAIN-SUFFIX,telegram.org,Ghelper
+  - DOMAIN-SUFFIX,pikpak.com,Ghelper
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,172.23.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR6,::1/128,DIRECT
+  - IP-CIDR6,fc00::/7,DIRECT
+  - IP-CIDR6,fe80::/10,DIRECT
+  - IP-CIDR6,fd00::/8,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,Ghelper
