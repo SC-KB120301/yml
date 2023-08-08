@@ -29,14 +29,14 @@ dns:
 proxies:
   - name: 香港WTT3 22443
     type: http
-    server: 144d1dd9-rxoxs0-7q16.wtt5.p5pv.com
+    server: 3011fb19-rze1s0-s43sxn-7q16.wtt5.p5pv.com
     port: "22443"
     username: eb13980206608@gmail.com
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     tls: true
   - name: 台灣 61234
     type: http
-    server: 144d1dd9-rxoxs0-7q16.tw4.tcpbbr.net
+    server: 0cf3556d-rze1s0-s43sxn-7q16.tw4.tcpbbr.net
     port: "61234"
     username: eb13980206608@gmail.com
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
@@ -87,19 +87,29 @@ proxies:
     port: "7893"
     username: admin
     password: "901203"
+  - alterId: 0
+    cipher: auto
+    name: 台湾2
+    network: tcp
+    password: d9be661e-3031-11ee-8d35-f23c9164ca5d
+    port: 443
+    server: e6d89f99-rze1s0-s43sxn-7q16.tw3.p5pv.com
+    tls: false
+    type: trojan
 proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
       - 香港WTT3 22443
       - 台灣 61234
-      - 🇫🇷法国SSR
+      - 台湾2
       - CTCC
       - 电信
       - CUCC
       - 联通
       - CMCC
       - 移动
+      - 🇫🇷法国SSR
     type: select
   - interval: 3600
     name: 全球智能
@@ -113,6 +123,7 @@ proxy-groups:
       - 联通
       - CMCC
       - 移动
+      - 台湾2
     type: url-test
     url: http://www.gstatic.com/generate_204
 rules:
