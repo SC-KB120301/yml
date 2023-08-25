@@ -27,17 +27,17 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  - name: 香港WTT3 22443
+  - name: "美國專線 : 西雅图-精品 443"
     type: http
     server: c0ea5ece-s024g0-s43sxn-7q16.on1t.com
     port: "443"
     username: eb13980206608@gmail.com
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     tls: true
-  - name: 台灣 61234
+  - name: "美國加州 : 洛杉磯[CM] 3310"
     type: http
-    server: 0cf3556d-rze1s0-s43sxn-7q16.tw4.tcpbbr.net
-    port: "61234"
+    server: fbb9849e-s024g0-s43sxn-7q16.j2ai.com
+    port: "3310"
     username: eb13980206608@gmail.com
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     tls: true
@@ -100,8 +100,8 @@ proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
-      - 香港WTT3 22443
-      - 台灣 61234
+      - "美國專線 : 西雅图-精品 443"
+      - "美國加州 : 洛杉磯[CM] 3310"
       - 台湾2
       - CTCC
       - 电信
@@ -114,9 +114,9 @@ proxy-groups:
   - interval: 3600
     name: 全球智能
     proxies:
-      - 香港WTT3 22443
+      - "美國專線 : 西雅图-精品 443"
       - 🇫🇷法国SSR
-      - 台灣 61234
+      - "美國加州 : 洛杉磯[CM] 3310"
       - CTCC
       - 电信
       - CUCC
