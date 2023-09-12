@@ -27,19 +27,16 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  - name: 🇺🇸美國硅谷 80
-    type: vmess
-    server: 7e6a58fb-s03z40-s43sxn-7q16.sj2.comefromchinatown.com
-    port: "80"
-    uuid: d9be661e-3031-11ee-8d35-f23c9164ca5d
-    alterId: "0"
-    cipher: auto
-    network: ws
-    ws-opts:
-      path: /
+  - name: 台湾 61234
+    type: http
+    server: 0fd21c95-s16v40-s43sxn-7q16.tw4.tcpbbr.net
+    port: "61234"
+    username: eb13980206608@gmail.com
+    password: d9be661e-3031-11ee-8d35-f23c9164ca5d
+    tls: true
   - name: 🇺🇸ChatGPT-02
     type: http
-    server: 46f67b64-s03z40-s43sxn-7q16.sj.comefromchinatown.com
+    server: 03c54332-s16v40-s43sxn-7q16.sj.comefromchinatown.com
     port: "57891"
     username: eb13980206608@gmail.com
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
@@ -64,7 +61,7 @@ proxies:
     tls: true
   - name: 俄羅斯 1007
     type: http
-    server: ba7bfe96-s03z40-s43sxn-7q16.ru.z7zi.com
+    server: 5850b45a-s16v40-s43sxn-7q16.ru.z7zi.com
     port: "1007"
     username: eb13980206608@gmail.com
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
@@ -83,7 +80,7 @@ proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
-      - 🇺🇸美國硅谷 80
+      - 台湾 61234
       - 🇺🇸ChatGPT-02
       - 🇺🇸美國洛杉磯 80
       - 俄羅斯 1007
@@ -93,7 +90,7 @@ proxy-groups:
   - interval: 3600
     name: 全球智能
     proxies:
-      - 🇺🇸美國硅谷 80
+      - 台湾 61234
       - 🇺🇸美國洛杉磯 80
       - 🇺🇸ChatGPT-02
       - 俄羅斯 1007
