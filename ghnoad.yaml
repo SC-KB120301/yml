@@ -73,6 +73,12 @@ proxies:
     server: b12ae9e8-s1uxs0-0-m4sq.tw3.p5pv.com
     password: e89bdcc6-53a5-428c-4bdb-54a4ededd4cc
     port: "443"
+  - name: ChatGPT-01
+    type: trojan
+    password: d9be661e-3031-11ee-8d35-f23c9164ca5d
+    server: e7820629-s1uxs0-s43sxn-7q16.sj.comefromchinatown.com
+    port: "57891"
+    tls: true
 proxy-groups:
   - name: Ghelper
     proxies:
@@ -82,6 +88,7 @@ proxy-groups:
       - 🇺🇸美國洛杉磯 80
       - 香港WTT3 22443
       - 台湾2
+      - ChatGPT-01
       - 香港精品 80
     type: select
   - interval: 3600
@@ -90,6 +97,7 @@ proxy-groups:
       - 台湾 61234
       - 🇺🇸美國洛杉磯 80
       - 🇺🇸ChatGPT-02
+      - ChatGPT-01
       - 香港WTT3 22443
       - 台湾2
       - 香港精品 80
