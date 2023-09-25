@@ -68,6 +68,11 @@ proxies:
     network: ws
     ws-opts:
       path: /
+  - name: 台湾2
+    type: trojan
+    server: b12ae9e8-s1uxs0-0-m4sq.tw3.p5pv.com
+    password: e89bdcc6-53a5-428c-4bdb-54a4ededd4cc
+    port: "443"
 proxy-groups:
   - name: Ghelper
     proxies:
@@ -76,6 +81,7 @@ proxy-groups:
       - 🇺🇸ChatGPT-02
       - 🇺🇸美國洛杉磯 80
       - 香港WTT3 22443
+      - 台湾2
       - 香港精品 80
     type: select
   - interval: 3600
@@ -85,6 +91,7 @@ proxy-groups:
       - 🇺🇸美國洛杉磯 80
       - 🇺🇸ChatGPT-02
       - 香港WTT3 22443
+      - 台湾2
       - 香港精品 80
     type: url-test
     url: http://www.gstatic.com/generate_204
