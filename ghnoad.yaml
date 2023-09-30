@@ -36,8 +36,8 @@ proxies:
     tls: true
   - name: 🇺🇸ChatGPT-02
     type: http
-    server: 5cf0e2dc-s1t340-s43sxn-7q16.sj.comefromchinatown.com
-    port: "57891"
+    server: 87cbf6e9-s24740-s8u69n-7q16.sj2.comefromchinatown.com
+    port: "17891"
     username: eb13980206608@gmail.com
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     tls: true
@@ -76,8 +76,8 @@ proxies:
   - name: ChatGPT-01
     type: trojan
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
-    server: e7820629-s1uxs0-s43sxn-7q16.sj.comefromchinatown.com
-    port: "57891"
+    server: 87cbf6e9-s24740-s8u69n-7q16.sj2.comefromchinatown.com
+    port: "17891"
     tls: true
 proxy-groups:
   - name: Ghelper
