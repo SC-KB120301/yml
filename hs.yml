@@ -34,10 +34,10 @@ proxies:
     username: eb13980206608@gmail.com
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     tls: true
-  - name: "美國加州 : 洛杉磯[CM] 3310"
+  - name: 香港WTT3 22443
     type: http
-    server: fbb9849e-s024g0-s43sxn-7q16.j2ai.com
-    port: "3310"
+    server: e2677f69-s2j0g0-s8u69n-7q16.wtt5.p5pv.com
+    port: "22443"
     username: eb13980206608@gmail.com
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     tls: true
@@ -93,7 +93,7 @@ proxies:
     network: tcp
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     port: 443
-    server: e6d89f99-rze1s0-s43sxn-7q16.tw3.p5pv.com
+    server: 137c70b6-s2j0g0-s8u69n-7q16.tw3.p5pv.com
     tls: false
     type: trojan
 proxy-groups:
@@ -101,7 +101,7 @@ proxy-groups:
     proxies:
       - 全球智能
       - "美國專線 : 西雅图-精品 443"
-      - "美國加州 : 洛杉磯[CM] 3310"
+      - 香港WTT3 22443
       - 台湾2
       - CTCC
       - 电信
@@ -116,7 +116,7 @@ proxy-groups:
     proxies:
       - "美國專線 : 西雅图-精品 443"
       - 🇫🇷法国SSR
-      - "美國加州 : 洛杉磯[CM] 3310"
+      - 香港WTT3 22443
       - CTCC
       - 电信
       - CUCC
