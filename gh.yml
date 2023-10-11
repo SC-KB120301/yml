@@ -1,314 +1,74 @@
-mixed-port: 7890
 allow-lan: true
-bind-address: "*"
-mode: rule
-log-level: info
-external-controller: 127.0.0.1:9090
 dns:
-  enable: false
-  ipv6: false
   default-nameserver:
-    - 223.5.5.5
     - 119.29.29.29
-  enhanced-mode: fake-ip
+    - 223.5.5.5
+  enable: true
   fake-ip-range: 198.18.0.1/16
-  use-hosts: true
   nameserver:
     - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-  fallback:
-    - https://doh.dns.sb/dns-query
-    - https://dns.cloudflare.com/dns-query
-    - https://dns.twnic.tw/dns-query
-    - tls://8.8.4.4:853
-  fallback-filter:
-    geoip: true
-    ipcidr:
-      - 240.0.0.0/4
-      - 0.0.0.0/32
+    - https://223.6.6.6/dns-query
+  use-hosts: true
+log-level: warning
+mixed-port: 9981
+mode: rule
 proxies:
-  - name: 🇫🇷法国SSR
-    server: fr-am1-5.eqsunshine.com
-    port: 8181
-    type: ssr
-    cipher: aes-256-cfb
-    password: RcfVcDzzB
-    protocol: origin
-    obfs: tls1.2_ticket_auth
-    protocol-param: ""
-    obfs-param: ""
-  - name: 🇦🇷 阿根廷 VIP
-    server: us-am3.eqnode.net
-    port: 8081
-    type: ssr
-    cipher: aes-256-cfb
-    password: fou8MBGij
-    protocol: origin
-    obfs: tls1.2_ticket_auth
-    protocol-param: ""
-    obfs-param: ""
-  - name: "🇺🇸美國專線 : 洛杉磯10G 443"
-    type: http
-    server: eeb18655-rvw4g0-rzdfln-7q16.on1t.com
-    port: "443"
-    tls: true
-    _index: 18
-  - name: "🇺🇸美國硅谷 : 硅谷:443"
-    type: http
-    server: 52c67697-rults0-rzdfln-7q16.sj.jy3p.com
-    port: "443"
-    tls: true
-  - name: "🇺🇸美國西岸 : 洛杉磯2 443"
-    type: http
-    server: c6983dcf-rvw4g0-rzdfln-7q16.copydesign.net
-    port: "443"
-    tls: true
-  - name: " ChatGPT测试：443"
-    type: http
-    server: 77c9b6e5-rvw4g0-rzdfln-7q16.uk.n7ai.com
-    port: "443"
-    tls: true
-  - name: 测试 1044
-    type: http
-    server: 4bab51a6-rvw4g0-rzdfln-7q16.uk.z7zi.com
-    port: "1044"
-    tls: true
-  - name: "🇭🇰香港商寬2 : 香港HKBN 1120"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "1120"
-    tls: true
-  - name: "🇭🇰香港商寬 : 香港HKT 2128"
-    type: http
-    server: c8209bca-rvw4g0-rzdfln-7q16.alrihla.net
-    port: "2128"
-    tls: true
-    _index: 3
-  - name: "🇹🇼中國台灣 : 台北 2330"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "2330"
-    tls: true
-    _index: 3
-  - name: "🇯🇵日本綜合 : 東京 2340"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "2340"
-    tls: true
-  - name: "🇬🇧英國 : 南安普敦 2350"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "2350"
-    tls: true
-  - name: "🇩🇪德國 : 慕尼黑 2360"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "2360"
-    tls: true
-  - name: "🇫🇷法國 : 巴黎 2370"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "2370"
-    tls: true
-  - name: "🇹🇷土耳其 : 伊斯坦布爾 2380"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "2380"
-    tls: true
-    _index: 8
-  - name: "🇰🇷韩國 : 首爾 2390"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "2390"
-    tls: true
-  - name: "🇸🇬新加坡 : 新加坡 2400"
-    type: http
-    server: e0a4bad5-rults0-rzdfln-7q16.j2ai.com
-    port: "2400"
-    tls: true
-  - name: "🇳🇿新西兰 : 奧尅蘭 2410"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "2410"
-    tls: true
-  - name: "🇦🇺澳大利亞 : 悉尼 2412"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "2412"
-    tls: true
-  - name: "🇷🇺俄羅斯 : 聖彼得堡 1007"
-    type: http
-    server: 14e9381f-rui4g0-rzdfln-7q16.ru.z7zi.com
-    port: "1007"
-    tls: true
-  - name: "🇮🇳印度 : 孟買 2430"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "2430"
-    tls: true
-  - name: "🇯🇵日本原生 : 大阪 2440"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "2440"
-    tls: true
-  - name: "🇺🇸美國加州 : 洛杉磯 3310"
-    type: http
-    server: e0a4bad5-rults0-rzdfln-7q16.j2ai.com
-    port: "3310"
-    tls: true
-  - name: "🇧🇷 巴西 : 圣保罗 3380"
-    type: http
-    server: 7e565fef-rvw4g0-rzdfln-7q16.chromeapi.net
-    port: "3380"
-    tls: true
-  - name: "🇺🇸美国丹佛 : 丹佛10G 5228"
-    type: http
-    server: 886b4f57-rtvwg0-rzdfln-7q16.denver.jy3p.com
-    port: "5228"
-    tls: true
-  - name: "🇭🇰香港精品 : 香港10G 5228"
-    type: http
-    server: 7c20d87d-rvw4g0-rzdfln-7q16.sphinxsearch.net
-    port: "5228"
-    tls: true
-  - name: 🇩🇪德國 443
-    type: http
-    server: d68ec251-runog0-7q16.de.p5pv.com
-    port: "443"
-    username: eb13980206608@gmail.com
-    password: e9ed3e80-e954-11ed-8d3b-f23c91369f2d
-    tls: true
-  - name: 🇺🇸美国丹佛 443
-    type: http
-    server: b9ae9745-ru1gg0-rzdfln-7q16.j2ai.com
-    port: "3310"
-    username: eb13980206608@gmail.com
-    password: a5f15204-e777-11ed-8d3b-f23c91369f2d
-    tls: true
-  - name: 🇭🇰香港WTT3 22443
-    type: http
-    server: 7q16.wtt5.p5pv.com
-    port: "22443"
-    username: eb13980206608@gmail.com
-    password: a5f15204-e777-11ed-8d3b-f23c91369f2d
-    tls: true
-  - name: 🇹🇼中國台北 61234
-    type: http
-    server: f985eb3c-rp4ao0-7q16.tw4.tcpbbr.net
-    port: "61234"
-    username: eb13980206608@gmail.com
-    password: a5f15204-e777-11ed-8d3b-f23c91369f2d
-    tls: true
-  - name: 🇺🇸美國 80
-    type: vmess
-    server: 192.203.230.86
-    port: "80"
-    uuid: a442dacf-cbb3-488a-9744-61494ea38630
-    alterId: "0"
+  - alterId: 0
     cipher: auto
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: us-1.acyun.cf
+    name: 🇹🇼台湾2
+    network: tcp
+    password: e89bdcc6-53a5-428c-4bdb-54a4ededd4cc
+    port: 443
+    server: a623067b-s2okg0-0-m4sq.tw3.p5pv.com
+    tls: false
+    type: trojan
+  - alterId: 0
+    cipher: auto
+    name: 🇬🇧英国
+    network: tcp
+    password: e89bdcc6-53a5-428c-4bdb-54a4ededd4cc
+    port: 17891
+    server: a0cd7438-s2okg0-0-m4sq.sj2.comefromchinatown.com
+    tls: true
+    type: trojan
+  - name: 🇹🇼台湾1
+    server: ae2b939f-s2okg0-0-7q0w.tw3.p5pv.com
+    password: ccc8becc-d4f8-11ec-bb74-f23c9164ca5d
+    port: 443  
+    tls: false
+    type: trojan
 proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
-      - 香港智能
-      - 🇫🇷法国SSR
-      - 🇦🇷 阿根廷 VIP
-      - 🇺🇸美國 80
-      - " ChatGPT测试：443"
-      - "🇺🇸美國專線 : 洛杉磯10G 443"
-      - "🇺🇸美國西岸 : 洛杉磯2 443"
-      - "🇺🇸美國硅谷 : 硅谷:443"
-      - "🇷🇺俄羅斯 : 聖彼得堡 1007"
-      - 测试 1044
-      - "🇭🇰香港商寬2 : 香港HKBN 1120"
-      - "🇭🇰香港商寬 : 香港HKT 2128"
-      - "🇹🇼中國台灣 : 台北 2330"
-      - "🇯🇵日本綜合 : 東京 2340"
-      - "🇬🇧英國 : 南安普敦 2350"
-      - "🇩🇪德國 : 慕尼黑 2360"
-      - "🇫🇷法國 : 巴黎 2370"
-      - "🇹🇷土耳其 : 伊斯坦布爾 2380"
-      - "🇰🇷韩國 : 首爾 2390"
-      - "🇸🇬新加坡 : 新加坡 2400"
-      - "🇳🇿新西兰 : 奧尅蘭 2410"
-      - "🇦🇺澳大利亞 : 悉尼 2412"
-      - "🇮🇳印度 : 孟買 2430"
-      - "🇯🇵日本原生 : 大阪 2440"
-      - "🇺🇸美國加州 : 洛杉磯 3310"
-      - "🇧🇷 巴西 : 圣保罗 3380"
-      - "🇺🇸美国丹佛 : 丹佛10G 5228"
-      - "🇭🇰香港精品 : 香港10G 5228"
-      - 🇺🇸美国丹佛 443
-      - 🇩🇪德國 443
-      - 🇭🇰香港WTT3 22443
-      - 🇹🇼中國台北 61234
+      - 🇹🇼台湾1
+      - 🇹🇼台湾2
+      - 🇬🇧英国
     type: select
   - interval: 3600
     name: 全球智能
     proxies:
-      - 🇺🇸美國 80
-      - " ChatGPT测试：443"
-      - 🇫🇷法国SSR
-      - 🇦🇷 阿根廷 VIP
-      - "🇺🇸美國專線 : 洛杉磯10G 443"
-      - 🇺🇸美国丹佛 443
-      - 测试 1044
-      - "🇫🇷法國 : 巴黎 2370"
-      - "🇹🇷土耳其 : 伊斯坦布爾 2380"
-      - "🇰🇷韩國 : 首爾 2390"
-      - "🇸🇬新加坡 : 新加坡 2400"
-      - "🇳🇿新西兰 : 奧尅蘭 2410"
-      - "🇦🇺澳大利亞 : 悉尼 2412"
-      - "🇷🇺俄羅斯 : 聖彼得堡 1007"
-      - "🇮🇳印度 : 孟買 2430"
-      - "🇯🇵日本原生 : 大阪 2440"
-      - "🇺🇸美國硅谷 : 硅谷:443"
-      - "🇭🇰香港商寬 : 香港HKT 2128"
-      - "🇹🇼中國台灣 : 台北 2330"
-      - "🇯🇵日本綜合 : 東京 2340"
-      - "🇬🇧英國 : 南安普敦 2350"
-      - "🇩🇪德國 : 慕尼黑 2360"
-      - "🇺🇸美國加州 : 洛杉磯 3310"
-      - "🇧🇷 巴西 : 圣保罗 3380"
-      - "🇺🇸美國西岸 : 洛杉磯2 443"
-      - "🇺🇸美国丹佛 : 丹佛10G 5228"
-      - "🇭🇰香港精品 : 香港10G 5228"
-      - 🇩🇪德國 443
-      - "🇭🇰香港商寬2 : 香港HKBN 1120"
-      - 🇭🇰香港WTT3 22443
-      - 🇹🇼中國台北 61234
+      - 🇹🇼台湾1
+      - 🇹🇼台湾2
+      - 🇬🇧英国
     type: url-test
     url: http://www.gstatic.com/generate_204
-  - name: 香港智能
-    proxies:
-      - "🇭🇰香港商寬 : 香港HKT 2128"
-      - "🇺🇸美國硅谷 : 硅谷:443"
-      - "🇭🇰香港精品 : 香港10G 5228"
-      - "🇭🇰香港商寬2 : 香港HKBN 1120"
-      - 🇭🇰香港WTT3 22443
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 600
 rules:
   - DOMAIN-SUFFIX,ip-api.com,DIRECT
   - DOMAIN-SUFFIX,ipip.net,DIRECT
-  - DOMAIN-SUFFIX,myds.me,DIRECT
   - DOMAIN-SUFFIX,ip138.com,DIRECT
   - DOMAIN-SUFFIX,stunnel.vip,DIRECT
   - DOMAIN-SUFFIX,gotochinatown.net,DIRECT
-  - DOMAIN-SUFFIX,ghelper.net,DIRECT
-  - DOMAIN-SUFFIX,ghelper.me,DIRECT
-  - DOMAIN-SUFFIX,ghelper.xyz,DIRECT
   - DOMAIN-SUFFIX,ghelper.org,DIRECT
   - DOMAIN-SUFFIX,fastapi.me,DIRECT
   - DOMAIN-SUFFIX,vps315.com,DIRECT
   - DOMAIN-SUFFIX,copyplay.net,DIRECT
   - DOMAIN-SUFFIX,pickdown.net,DIRECT
+  - DOMAIN-SUFFIX,ggsync.net,DIRECT
+  - DOMAIN-SUFFIX,ghelpersync.com,DIRECT
+  - DOMAIN-SUFFIX,ghelpersync.net,DIRECT
+  - DOMAIN-SUFFIX,cnsync.net,DIRECT
+  - DOMAIN-SUFFIX,browserapi.net,DIRECT
   - DOMAIN-KEYWORD,google,Ghelper
   - DOMAIN-KEYWORD,youtube,Ghelper
   - DOMAIN-SUFFIX,ggpht.com,Ghelper
@@ -334,16 +94,15 @@ rules:
   - DOMAIN-SUFFIX,t.co,Ghelper
   - DOMAIN-SUFFIX,facebook.com,Ghelper
   - DOMAIN-SUFFIX,telegram.org,Ghelper
-  - DOMAIN-SUFFIX,pikpak.com,Ghelper
-  - IP-CIDR,192.168.0.0/16,DIRECT
-  - IP-CIDR,10.0.0.0/8,DIRECT
-  - IP-CIDR,172.16.0.0/12,DIRECT
-  - IP-CIDR,172.23.0.0/12,DIRECT
-  - IP-CIDR,127.0.0.0/8,DIRECT
-  - IP-CIDR,100.64.0.0/10,DIRECT
-  - IP-CIDR6,::1/128,DIRECT
-  - IP-CIDR6,fc00::/7,DIRECT
-  - IP-CIDR6,fe80::/10,DIRECT
-  - IP-CIDR6,fd00::/8,DIRECT
+  - DOMAIN-SUFFIX,whatsapp.com,Ghelper
+  - DOMAIN-SUFFIX,whatsapp.net,Ghelper
+  - DOMAIN-SUFFIX,linkedin.com,Ghelper
+  - DOMAIN-SUFFIX,licdn.com,Ghelper
+  - DOMAIN-SUFFIX,trkn.us,Ghelper
+  - DOMAIN-SUFFIX,cedexis.com,Ghelper
+  - DOMAIN-SUFFIX,linkedin.com,Ghelper
+  - DOMAIN-SUFFIX,licdn.com,Ghelper
+  - DOMAIN-SUFFIX,trkn.us,Ghelper
+  - DOMAIN-SUFFIX,cedexis.com,Ghelper
   - GEOIP,CN,DIRECT
-  - MATCH,Ghelper
+  - MATCH, Ghelper
