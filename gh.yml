@@ -47,12 +47,30 @@ proxies:
     server: ccc625d9-s2okg0-0-7q0w.chrome.m1aj.com
     port: "443"
     tls: true
+  - name: 🇭🇰香港WTT3-940656676
+    type: http
+    server: aa583459-s2vz40-s44ks8-7q0w.wtt5.p5pv.com
+    port: "22443"
+    tls: true
+  - name: 🇹🇼台灣-940656676
+    type: http
+    server: 36976081-s2vz40-s44ks8-7q0w.tw4.tcpbbr.net
+    port: "61234"
+    tls: true
+  - name: ChatGPT-02-940656676
+    type: http
+    server: dfe448fe-s2vz40-s44ks8-7q0w.sj2.comefromchinatown.com
+    port: "17891"
+    tls: true
 proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
       - 测试1-10.15
       - 测试2-10.15
+      - ChatGPT-02-940656676
+      - 🇭🇰香港WTT3-940656676
+      - 🇹🇼台灣-940656676
       - 🇹🇼台湾1
       - 🇹🇼台湾2
       - 🇬🇧英国
@@ -62,6 +80,9 @@ proxy-groups:
     proxies:
       - 测试1-10.15
       - 测试2-10.15
+      - 🇭🇰香港WTT3-940656676
+      - ChatGPT-02-940656676
+      - 🇹🇼台灣-940656676
       - 🇹🇼台湾1
       - 🇹🇼台湾2
       - 🇬🇧英国
