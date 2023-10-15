@@ -18,8 +18,16 @@ dns:
     - https://223.5.5.5/dns-query
     - https://223.6.6.6/dns-query
     - https://doh.pub/dns-query
-  fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
-  fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
+  fallback:
+    - https://doh.dns.sb/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.twnic.tw/dns-query
+    - tls://8.8.4.4:853
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 proxies:
   - name: 🇺🇸 theepicbrowser.com
     type: http
@@ -126,10 +134,16 @@ proxies:
     server: in2.epicbrowser.net
     port: "8888"
     tls: true
+  - name: 🇭🇰 WTT3
+    type: http
+    server: aa583459-s2vz40-s44ks8-7q0w.wtt5.p5pv.com
+    port: "22443"
+    tls: true
 proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
+      - 🇭🇰 WTT3
       - 🇺🇸 theepicbrowser.com
       - 🇺🇸backup.theepicbrowser.com
       - 🇺🇸use.theepicbrowser.com
@@ -155,6 +169,7 @@ proxy-groups:
   - interval: 3600
     name: 全球智能
     proxies:
+      - 🇭🇰 WTT3
       - 🇺🇸 theepicbrowser.com
       - 🇺🇸backup.theepicbrowser.com
       - 🇺🇸use.theepicbrowser.com
