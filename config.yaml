@@ -1,12 +1,9 @@
-mixed-port: 7893
+mixed-port: 7890
 allow-lan: true
 bind-address: "*"
-authentication:
-  - admin:901203
-  - admin:901203
 mode: rule
 log-level: info
-external-controller: 0.0.0.0:9090
+external-controller: 127.0.0.1:9090
 dns:
   enable: false
   ipv6: false
@@ -30,65 +27,63 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  - name: "🇺🇸美國專線 : 洛杉磯10G 443"
+  - name: SG 2400
     type: http
-    server: 9d01ec3c-rvu9s0-rzdfln-7q16.on1t.com
-    port: "443"
+    server: 3a589fa7-s2okg0-s2lmnj-1p9zo.alrihla.net
+    port: "2400"
     tls: true
-  - name: "🇺🇸美國西岸 : 洛杉磯2 443"
+  - name: 香港 汇港电讯 (WTTHK) 2128
     type: http
-    server: f1ced31f-rvu9s0-rzdfln-7q16.copydesign.net
-    port: "443"
-    tls: true
-  - name: "🇭🇰香港商寬2 : 香港HKBN 1120"
-    type: http
-    server: ecfd4546-rvu9s0-rzdfln-7q16.chromeapi.net
-    port: "1120"
-    tls: true
-  - name: "🇭🇰香港商寬 : 香港HKT 2128"
-    type: http
-    server: 752ddee0-rvu9s0-rzdfln-7q16.alrihla.net
+    server: b1c63cb3-s2okg0-s2lmnj-1p9zo.pyboard.net
     port: "2128"
     tls: true
-  - name: "🇹🇼中國台灣 : 台北 2330"
+  - name: 香港 电讯盈科 2128
     type: http
-    server: ecfd4546-rvu9s0-rzdfln-7q16.chromeapi.net
-    port: "2330"
+    server: 3a589fa7-s2okg0-s2lmnj-1p9zo.alrihla.net
+    port: "2128"
     tls: true
-  - name: "🇭🇰香港精品 : 香港10G 5228"
+  - name: US California Los Angeles 443
     type: http
-    server: 095d64a0-rvu9s0-rzdfln-7q16.sphinxsearch.net
+    server: 5b1ce1ba-s2okg0-s2lmnj-1p9zo.copydesign.net
+    port: "443"
+    tls: true
+  - name: 香港 电讯盈科 5228
+    type: http
+    server: 1114440a-s2okg0-s2lmnj-1p9zo.sphinxsearch.net
     port: "5228"
     tls: true
-  - name: 🇩🇪德國 443
+  - name: 香港HKT[[直连] 443
     type: http
-    server: 505f6270-ruysg0-7q16.de.p5pv.com
+    server: ec13ce9f-s2okg0-s2lmnj-1p9zo.hk.z7zi.com
     port: "443"
-    username: eb13980206608@gmail.com
-    password: e9ed3e80-e954-11ed-8d3b-f23c91369f2d
+    tls: true
+  - name: 10-15启用
+    type: http
+    server: ddedcebf-s2okg0-0-8k1i.chrome.m1aj.com
+    port: "443"
     tls: true
 proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
-      - 🇩🇪德國 443
-      - "🇺🇸美國專線 : 洛杉磯10G 443"
-      - "🇺🇸美國西岸 : 洛杉磯2 443"
-      - "🇭🇰香港商寬2 : 香港HKBN 1120"
-      - "🇭🇰香港商寬 : 香港HKT 2128"
-      - "🇹🇼中國台灣 : 台北 2330"
-      - "🇭🇰香港精品 : 香港10G 5228"
+      - 10-15启用
+      - US California Los Angeles 443
+      - 香港 电讯盈科 2128
+      - 香港 汇港电讯 (WTTHK) 2128
+      - 香港 电讯盈科 5228
+      - 香港HKT[[直连] 443
+      - SG 2400
     type: select
   - interval: 3600
     name: 全球智能
     proxies:
-      - "🇺🇸美國專線 : 洛杉磯10G 443"
-      - "🇭🇰香港商寬 : 香港HKT 2128"
-      - "🇹🇼中國台灣 : 台北 2330"
-      - "🇺🇸美國西岸 : 洛杉磯2 443"
-      - "🇭🇰香港精品 : 香港10G 5228"
-      - 🇩🇪德國 443
-      - "🇭🇰香港商寬2 : 香港HKBN 1120"
+      - 10-15启用
+      - 香港HKT[[直连] 443
+      - SG 2400
+      - US California Los Angeles 443
+      - 香港 电讯盈科 2128
+      - 香港 电讯盈科 5228
+      - 香港 汇港电讯 (WTTHK) 2128
     type: url-test
     url: http://www.gstatic.com/generate_204
 rules:
