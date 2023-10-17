@@ -41,7 +41,7 @@ proxies:
     sni: pus1.pqjc.buzz
   - name: 🇺🇸美国凤凰城2-0.01倍
     type: trojan
-    server: qus2.pqjc.buzz
+    server: 23.227.39.56
     port: 443
     password: abea8d11-c64e-45bd-bfc2-bedfa079517d
     udp: true
@@ -49,11 +49,11 @@ proxies:
     ws-opts:
       path: /pq/us2
       headers:
-        Host: qus2.pqjc.buzz
-    sni: qus2.pqjc.buzz
+        Host: p1us2.pqjc.buzz
+    sni: p1us2.pqjc.buzz
   - name: 🇺🇸美国凤凰城3-0.01倍
     type: trojan
-    server: qus3.pqjc.buzz
+    server: 23.227.39.83
     port: 443
     password: abea8d11-c64e-45bd-bfc2-bedfa079517d
     udp: true
@@ -61,11 +61,11 @@ proxies:
     ws-opts:
       path: /pq/us3
       headers:
-        Host: qus3.pqjc.buzz
-    sni: qus3.pqjc.buzz
+        Host: p1us3.pqjc.buzz
+    sni: p1us3.pqjc.buzz
   - name: 🇺🇸美国凤凰城4-0.01倍
     type: trojan
-    server: 23.227.39.108
+    server: 23.227.39.178
     port: 443
     password: abea8d11-c64e-45bd-bfc2-bedfa079517d
     udp: true
@@ -73,8 +73,8 @@ proxies:
     ws-opts:
       path: /pq/us4
       headers:
-        Host: pus4.pqjc.buzz
-    sni: pus4.pqjc.buzz
+        Host: p1us4.pqjc.buzz
+    sni: p1us4.pqjc.buzz
 proxy-groups:
   - name: 赔钱机场
     type: select
