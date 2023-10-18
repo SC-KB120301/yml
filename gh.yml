@@ -37,15 +37,10 @@ proxies:
     port: 443
     tls: false
     type: trojan
-  - name: 测试1-10.15
+  - name: 🇸🇬 测试-10.18
     type: http
-    server: 1c0363a4-s2okg0-0-m4sq.chrome.m1aj.com
-    port: "443"
-    tls: true
-  - name: 测试2-10.15
-    type: http
-    server: ccc625d9-s2okg0-0-7q0w.chrome.m1aj.com
-    port: "443"
+    server: 86d90e49-s2u4g0-s8u69n-7q16.alrihla.net
+    port: "2400"
     tls: true
   - name: 🇭🇰香港WTT3-940656676
     type: http
@@ -66,20 +61,18 @@ proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
-      - 测试1-10.15
-      - 测试2-10.15
-      - ChatGPT-02-940656676
+      - 🇸🇬 测试-10.18
       - 🇭🇰香港WTT3-940656676
       - 🇹🇼台灣-940656676
       - 🇹🇼台湾1
       - 🇹🇼台湾2
       - 🇬🇧英国
+      - ChatGPT-02-940656676
     type: select
   - interval: 3600
     name: 全球智能
     proxies:
-      - 测试1-10.15
-      - 测试2-10.15
+      - 🇸🇬 测试-10.18
       - 🇭🇰香港WTT3-940656676
       - ChatGPT-02-940656676
       - 🇹🇼台灣-940656676
