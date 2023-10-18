@@ -32,7 +32,7 @@ proxies:
     tls: true
     type: trojan
   - name: 🇹🇼台湾1
-    server: ae2b939f-s2okg0-0-7q0w.tw3.p5pv.com
+    server: 4b0fafdd-s31j40-s44ks8-7q0w.tw3.p5pv.com
     password: ccc8becc-d4f8-11ec-bb74-f23c9164ca5d
     port: 443
     tls: false
