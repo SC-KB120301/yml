@@ -34,16 +34,19 @@ proxies:
     username: eb13980206608@gmail.com
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     tls: true
-  - name: 🇫🇷法国SSR
-    server: fr-am1-5.eqsunshine.com
-    port: 8181
-    type: ssr
-    cipher: aes-256-cfb
-    password: RcfVcDzzB
-    protocol: origin
-    obfs: tls1.2_ticket_auth
-    protocol-param: ""
-    obfs-param: ""
+  - name: 🇺🇸 美国-冰河圈子
+    type: vmess
+    server: 172.67.143.202
+    port: "443"
+    uuid: 4548b8de-c6f5-41f2-8cb6-723c8db8ed03
+    alterId: "0"
+    cipher: auto
+    tls: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: us.binghe.design
   - name: 移动
     type: http
     server: v6.sckb1203.xyz
@@ -93,7 +96,7 @@ proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
-      - 🇫🇷法国SSR
+      - 🇺🇸 美国-冰河圈子
       - 香港WTT3 22443
       - 台湾2
       - CTCC
@@ -106,7 +109,7 @@ proxy-groups:
   - interval: 3600
     name: 全球智能
     proxies:
-      - 🇫🇷法国SSR
+      - 🇺🇸 美国-冰河圈子
       - 香港WTT3 22443
       - CTCC
       - 电信
