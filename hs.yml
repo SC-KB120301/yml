@@ -27,16 +27,9 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  - name: "美國專線 : 西雅图-精品 443"
-    type: http
-    server: c0ea5ece-s024g0-s43sxn-7q16.on1t.com
-    port: "443"
-    username: eb13980206608@gmail.com
-    password: d9be661e-3031-11ee-8d35-f23c9164ca5d
-    tls: true
   - name: 香港WTT3 22443
     type: http
-    server: e2677f69-s2j0g0-s8u69n-7q16.wtt5.p5pv.com
+    server: 0c97d417-s358g0-s44ks8-7q0w.wtt5.p5pv.com
     port: "22443"
     username: eb13980206608@gmail.com
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
@@ -93,14 +86,14 @@ proxies:
     network: tcp
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     port: 443
-    server: 137c70b6-s2j0g0-s8u69n-7q16.tw3.p5pv.com
+    server: 1b3452e9-s358g0-0-m4sq.tw3.p5pv.com
     tls: false
     type: trojan
 proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
-      - "美國專線 : 西雅图-精品 443"
+      - 🇫🇷法国SSR
       - 香港WTT3 22443
       - 台湾2
       - CTCC
@@ -109,12 +102,10 @@ proxy-groups:
       - 联通
       - CMCC
       - 移动
-      - 🇫🇷法国SSR
     type: select
   - interval: 3600
     name: 全球智能
     proxies:
-      - "美國專線 : 西雅图-精品 443"
       - 🇫🇷法国SSR
       - 香港WTT3 22443
       - CTCC
