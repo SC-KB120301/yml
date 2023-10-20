@@ -34,6 +34,16 @@ proxies:
     username: eb13980206608@gmail.com
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     tls: true
+  - name: 美國加州:洛杉磯[CM]
+    type: http
+    server: 5a3f6806-s2xts0-s8u69n-7q16.j2ai.com
+    port: "3310"
+    tls: true
+  - name: 香港HKT[直连]
+    type: http
+    server: 316ffb4c-s2xts0-s8u69n-7q16.hk.z7zi.com
+    port: "443"
+    tls: true
   - name: 🇺🇸 美国-冰河圈子
     type: vmess
     server: 172.67.143.202
@@ -97,6 +107,8 @@ proxy-groups:
     proxies:
       - 全球智能
       - 🇺🇸 美国-冰河圈子
+      - 美國加州:洛杉磯[CM]
+      - 香港HKT[直连]
       - 香港WTT3 22443
       - 台湾2
       - CTCC
@@ -109,7 +121,9 @@ proxy-groups:
   - interval: 3600
     name: 全球智能
     proxies:
+      - 香港HKT[直连]
       - 🇺🇸 美国-冰河圈子
+      - 美國加州:洛杉磯[CM]
       - 香港WTT3 22443
       - CTCC
       - 电信
