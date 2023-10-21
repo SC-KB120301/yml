@@ -44,19 +44,11 @@ proxies:
     server: 316ffb4c-s2xts0-s8u69n-7q16.hk.z7zi.com
     port: "443"
     tls: true
-  - name: 🇺🇸 美国-冰河圈子
-    type: vmess
-    server: 172.67.143.202
-    port: "443"
-    uuid: 4548b8de-c6f5-41f2-8cb6-723c8db8ed03
-    alterId: "0"
-    cipher: auto
+  - name: 俄罗斯
+    type: http
+    server: e0b46136-s37340-s8u69n-7q16.ru.z7zi.com
+    port: "1007"
     tls: true
-    network: ws
-    ws-opts:
-      path: /
-      headers:
-        Host: us.binghe.design
   - name: 移动
     type: http
     server: v6.sckb1203.xyz
@@ -106,7 +98,7 @@ proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
-      - 🇺🇸 美国-冰河圈子
+      - 俄罗斯
       - 美國加州:洛杉磯[CM]
       - 香港HKT[直连]
       - 香港WTT3 22443
@@ -122,7 +114,7 @@ proxy-groups:
     name: 全球智能
     proxies:
       - 香港HKT[直连]
-      - 🇺🇸 美国-冰河圈子
+      - 俄罗斯
       - 美國加州:洛杉磯[CM]
       - 香港WTT3 22443
       - CTCC
