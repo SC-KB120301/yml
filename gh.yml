@@ -22,63 +22,45 @@ proxies:
     server: 7f9a8e66-s31j40-0-m4sq.tw3.p5pv.com
     tls: false
     type: trojan
-  - alterId: 0
-    cipher: auto
-    name: 🇬🇧英国
-    network: tcp
-    password: e89bdcc6-53a5-428c-4bdb-54a4ededd4cc
-    port: 17891
-    server: a0cd7438-s2okg0-0-m4sq.sj2.comefromchinatown.com
-    tls: true
-    type: trojan
   - name: 🇹🇼台湾1
     server: 4b0fafdd-s31j40-s44ks8-7q0w.tw3.p5pv.com
     password: ccc8becc-d4f8-11ec-bb74-f23c9164ca5d
     port: 443
     tls: false
     type: trojan
-  - name: 🇸🇬 测试-10.18
+  - name: 🇸🇬 测试-10.24
     type: http
-    server: 86d90e49-s2u4g0-s8u69n-7q16.alrihla.net
+    server: 820fcdc5-s358g0-s44ks8-7q0w.alrihla.net
     port: "2400"
     tls: true
   - name: 🇭🇰香港WTT3-940656676
     type: http
-    server: aa583459-s2vz40-s44ks8-7q0w.wtt5.p5pv.com
+    server: e969740c-s3cn40-s44ks8-7q0w.wtt5.p5pv.com
     port: "22443"
     tls: true
   - name: 🇹🇼台灣-940656676
     type: http
-    server: 36976081-s2vz40-s44ks8-7q0w.tw4.tcpbbr.net
+    server: 80ee4a57-s3cn40-s44ks8-7q0w.tw4.tcpbbr.net
     port: "61234"
-    tls: true
-  - name: ChatGPT-02-940656676
-    type: http
-    server: dfe448fe-s2vz40-s44ks8-7q0w.sj2.comefromchinatown.com
-    port: "17891"
     tls: true
 proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
-      - 🇸🇬 测试-10.18
+      - 🇸🇬 测试-10.24
       - 🇭🇰香港WTT3-940656676
       - 🇹🇼台灣-940656676
       - 🇹🇼台湾1
       - 🇹🇼台湾2
-      - 🇬🇧英国
-      - ChatGPT-02-940656676
     type: select
   - interval: 3600
     name: 全球智能
     proxies:
-      - 🇸🇬 测试-10.18
+      - 🇸🇬 测试-10.24
       - 🇭🇰香港WTT3-940656676
-      - ChatGPT-02-940656676
       - 🇹🇼台灣-940656676
       - 🇹🇼台湾1
       - 🇹🇼台湾2
-      - 🇬🇧英国
     type: url-test
     url: http://www.gstatic.com/generate_204
 rules:
