@@ -1,84 +1,83 @@
+mixed-port: 7893
 allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
 dns:
+  enable: false
+  ipv6: false
   default-nameserver:
-    - 119.29.29.29
     - 223.5.5.5
-  enable: true
+    - 119.29.29.29
+  enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
+  use-hosts: true
   nameserver:
     - https://doh.pub/dns-query
-    - https://223.6.6.6/dns-query
-  use-hosts: true
-log-level: warning
-mixed-port: 9981
-mode: rule
+    - https://dns.alidns.com/dns-query
+  fallback:
+    - https://doh.dns.sb/dns-query
+    - https://dns.cloudflare.com/dns-query
+    - https://dns.twnic.tw/dns-query
+    - tls://8.8.4.4:853
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
 proxies:
-  - alterId: 0
-    cipher: auto
-    name: 🇹🇼台湾2
-    network: tcp
-    password: e89bdcc6-53a5-428c-4bdb-54a4ededd4cc
-    port: 443
-    server: 7f9a8e66-s31j40-0-m4sq.tw3.p5pv.com
-    tls: false
-    type: trojan
-  - name: 🇹🇼台湾1
-    server: 4b0fafdd-s31j40-s44ks8-7q0w.tw3.p5pv.com
-    password: ccc8becc-d4f8-11ec-bb74-f23c9164ca5d
-    port: 443
-    tls: false
-    type: trojan
-  - name: 🇸🇬 测试-10.24
+  - name: 香港WTT3 22443
     type: http
-    server: 820fcdc5-s358g0-s44ks8-7q0w.alrihla.net
-    port: "2400"
-    tls: true
-  - name: 🇭🇰香港WTT3-940656676
-    type: http
-    server: e969740c-s3cn40-s44ks8-7q0w.wtt5.p5pv.com
+    server: 3463c090-s3gcg0-s44ks8-7q0w.wtt5.p5pv.com
     port: "22443"
     tls: true
-  - name: 🇹🇼台灣-940656676
-    type: http
-    server: 80ee4a57-s3cn40-s44ks8-7q0w.tw4.tcpbbr.net
-    port: "61234"
-    tls: true
+  - name: 香港精品 80
+    type: vmess
+    server: 4f5ad036-s03z40-s43sxn-7q16.hkt.gotochinatown.net
+    port: "80"
+    uuid: d9be661e-3031-11ee-8d35-f23c9164ca5d
+    alterId: "2"
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /
+  - name: 台湾2
+    type: trojan
+    server: cf2142e9-s3gcg0-0-m4sq.tw3.p5pv.com
+    password: d9be661e-3031-11ee-8d35-f23c9164ca5d
+    port: "443"
 proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
-      - 🇸🇬 测试-10.24
-      - 🇭🇰香港WTT3-940656676
-      - 🇹🇼台灣-940656676
-      - 🇹🇼台湾1
-      - 🇹🇼台湾2
+      - 香港WTT3 22443
+      - 台湾2
+      - 香港精品 80
     type: select
   - interval: 3600
     name: 全球智能
     proxies:
-      - 🇸🇬 测试-10.24
-      - 🇭🇰香港WTT3-940656676
-      - 🇹🇼台灣-940656676
-      - 🇹🇼台湾1
-      - 🇹🇼台湾2
+      - 香港WTT3 22443
+      - 台湾2
+      - 香港精品 80
     type: url-test
     url: http://www.gstatic.com/generate_204
 rules:
   - DOMAIN-SUFFIX,ip-api.com,DIRECT
   - DOMAIN-SUFFIX,ipip.net,DIRECT
+  - DOMAIN-SUFFIX,myds.me,DIRECT
   - DOMAIN-SUFFIX,ip138.com,DIRECT
   - DOMAIN-SUFFIX,stunnel.vip,DIRECT
   - DOMAIN-SUFFIX,gotochinatown.net,DIRECT
+  - DOMAIN-SUFFIX,ghelper.net,DIRECT
+  - DOMAIN-SUFFIX,ghelper.me,DIRECT
+  - DOMAIN-SUFFIX,ghelper.xyz,DIRECT
   - DOMAIN-SUFFIX,ghelper.org,DIRECT
   - DOMAIN-SUFFIX,fastapi.me,DIRECT
   - DOMAIN-SUFFIX,vps315.com,DIRECT
   - DOMAIN-SUFFIX,copyplay.net,DIRECT
   - DOMAIN-SUFFIX,pickdown.net,DIRECT
-  - DOMAIN-SUFFIX,ggsync.net,DIRECT
-  - DOMAIN-SUFFIX,ghelpersync.com,DIRECT
-  - DOMAIN-SUFFIX,ghelpersync.net,DIRECT
-  - DOMAIN-SUFFIX,cnsync.net,DIRECT
-  - DOMAIN-SUFFIX,browserapi.net,DIRECT
   - DOMAIN-KEYWORD,google,Ghelper
   - DOMAIN-KEYWORD,youtube,Ghelper
   - DOMAIN-SUFFIX,ggpht.com,Ghelper
@@ -104,15 +103,16 @@ rules:
   - DOMAIN-SUFFIX,t.co,Ghelper
   - DOMAIN-SUFFIX,facebook.com,Ghelper
   - DOMAIN-SUFFIX,telegram.org,Ghelper
-  - DOMAIN-SUFFIX,whatsapp.com,Ghelper
-  - DOMAIN-SUFFIX,whatsapp.net,Ghelper
-  - DOMAIN-SUFFIX,linkedin.com,Ghelper
-  - DOMAIN-SUFFIX,licdn.com,Ghelper
-  - DOMAIN-SUFFIX,trkn.us,Ghelper
-  - DOMAIN-SUFFIX,cedexis.com,Ghelper
-  - DOMAIN-SUFFIX,linkedin.com,Ghelper
-  - DOMAIN-SUFFIX,licdn.com,Ghelper
-  - DOMAIN-SUFFIX,trkn.us,Ghelper
-  - DOMAIN-SUFFIX,cedexis.com,Ghelper
+  - DOMAIN-SUFFIX,pikpak.com,Ghelper
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,172.23.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - IP-CIDR6,::1/128,DIRECT
+  - IP-CIDR6,fc00::/7,DIRECT
+  - IP-CIDR6,fe80::/10,DIRECT
+  - IP-CIDR6,fd00::/8,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH, Ghelper
+  - MATCH,Ghelper
