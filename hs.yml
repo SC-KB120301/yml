@@ -27,26 +27,9 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  - name: 香港WTT3 22443
-    type: http
-    server: 0c97d417-s358g0-s44ks8-7q0w.wtt5.p5pv.com
-    port: "22443"
-    username: eb13980206608@gmail.com
-    password: d9be661e-3031-11ee-8d35-f23c9164ca5d
-    tls: true
-  - name: 美国洛杉矶
-    type: http
-    server: 78fe1c31-s33ds0-s44ks8-7q0w.copydesign.net
-    port: "443"
-    tls: true
-  - name: 香港商宽2
-    type: http
-    server: 4aec36a6-s33ds0-s8u69n-7q16.chromeapi.net
-    port: "1120"
-    tls: true
   - name: 俄罗斯
     type: http
-    server: e0b46136-s37340-s8u69n-7q16.ru.z7zi.com
+    server: f19a7589-s4j8g0-s5rvxi-7q0w.ru.z7zi.com
     port: "1007"
     tls: true
   - name: 移动
@@ -91,17 +74,20 @@ proxies:
     network: tcp
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     port: 443
-    server: 1b3452e9-s358g0-0-m4sq.tw3.p5pv.com
+    server: 99231892-s4j8g0-s5rvxi-7q0w.tw3.p5pv.com
     tls: false
     type: trojan
+  - name: 测试
+    type: http
+    server: f19a7589-s4j8g0-s5rvxi-7q0w.ru.z7zi.com
+    port: "1007"
+    tls: true
 proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
       - 俄罗斯
-      - 美国洛杉矶
-      - 香港商宽2
-      - 香港WTT3 22443
+      - 测试
       - 台湾2
       - CTCC
       - 电信
@@ -113,16 +99,14 @@ proxy-groups:
   - interval: 3600
     name: 全球智能
     proxies:
-      - 香港商宽2
       - 俄罗斯
-      - 美国洛杉矶
-      - 香港WTT3 22443
       - CTCC
       - 电信
       - CUCC
       - 联通
       - CMCC
       - 移动
+      - 测试
       - 台湾2
     type: url-test
     url: http://www.gstatic.com/generate_204
