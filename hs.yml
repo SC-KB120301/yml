@@ -79,9 +79,13 @@ proxies:
     type: trojan
   - name: 测试
     type: http
-    server: f19a7589-s4j8g0-s5rvxi-7q0w.ru.z7zi.com
+    server: b9b1e24c-s4mxs0-sdkjln-7q16.ru.z7zi.com
     port: "1007"
     tls: true
+  - name: nas1202
+    type: http
+    server: 192.168.2.205
+    port: "7893"
 proxy-groups:
   - name: Ghelper
     proxies:
@@ -95,6 +99,7 @@ proxy-groups:
       - 联通
       - CMCC
       - 移动
+      - nas1202
     type: select
   - interval: 3600
     name: 全球智能
@@ -107,6 +112,7 @@ proxy-groups:
       - CMCC
       - 移动
       - 测试
+      - nas1202
       - 台湾2
     type: url-test
     url: http://www.gstatic.com/generate_204
