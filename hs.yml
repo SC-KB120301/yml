@@ -74,7 +74,7 @@ proxies:
     network: tcp
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     port: 443
-    server: 99231892-s4j8g0-s5rvxi-7q0w.tw3.p5pv.com
+    server: 7aa79401-s4qn40-s5rvxi-7q0w.tw3.p5pv.com
     tls: false
     type: trojan
   - name: 测试
