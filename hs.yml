@@ -29,7 +29,7 @@ dns:
 proxies:
   - name: 俄罗斯
     type: http
-    server: f19a7589-s4j8g0-s5rvxi-7q0w.ru.z7zi.com
+    server: af9f4b9a-s4shs0-sdkjln-7q16.ru.z7zi.com
     port: "1007"
     tls: true
   - name: 移动
@@ -77,10 +77,10 @@ proxies:
     server: 7aa79401-s4qn40-s5rvxi-7q0w.tw3.p5pv.com
     tls: false
     type: trojan
-  - name: 测试
+  - name: 香港WTT3
     type: http
-    server: b9b1e24c-s4mxs0-sdkjln-7q16.ru.z7zi.com
-    port: "1007"
+    server: eb8311b7-s4shs0-sdkjln-7q16.wtt5.p5pv.com
+    port: "22443"
     tls: true
   - name: nas1202
     type: http
@@ -91,7 +91,7 @@ proxy-groups:
     proxies:
       - 全球智能
       - 俄罗斯
-      - 测试
+      - 香港WTT3
       - 台湾2
       - CTCC
       - 电信
@@ -111,7 +111,7 @@ proxy-groups:
       - 联通
       - CMCC
       - 移动
-      - 测试
+      - 香港WTT3
       - nas1202
       - 台湾2
     type: url-test
