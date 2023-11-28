@@ -29,7 +29,7 @@ dns:
 proxies:
   - name: 俄罗斯
     type: http
-    server: af9f4b9a-s4shs0-sdkjln-7q16.ru.z7zi.com
+    server: d3e32f7f-s4y1s0-s5rvxi-7q0w.ru.z7zi.com
     port: "1007"
     tls: true
   - name: 移动
@@ -74,12 +74,12 @@ proxies:
     network: tcp
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
     port: 443
-    server: 7aa79401-s4qn40-s5rvxi-7q0w.tw3.p5pv.com
+    server: 80543b3a-s4y1s0-s5rvxi-7q0w.tw3.p5pv.com
     tls: false
     type: trojan
   - name: 香港WTT3
     type: http
-    server: eb8311b7-s4shs0-sdkjln-7q16.wtt5.p5pv.com
+    server: a5243fee-s4y1s0-s5rvxi-7q0w.wtt5.p5pv.com
     port: "22443"
     tls: true
   - name: nas1202
