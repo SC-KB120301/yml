@@ -29,7 +29,7 @@ dns:
 proxies:
   - name: 俄罗斯
     type: http
-    server: d3e32f7f-s4y1s0-s5rvxi-7q0w.ru.z7zi.com
+    server: b0700185-s5cv40-0-m4sq.ru.z7zi.com
     port: "1007"
     tls: true
   - name: 移动
@@ -70,17 +70,17 @@ proxies:
     password: "901203"
   - alterId: 0
     cipher: auto
-    name: 台湾2
+    name: ChatGPT-01
     network: tcp
     password: d9be661e-3031-11ee-8d35-f23c9164ca5d
-    port: 443
-    server: 80543b3a-s4y1s0-s5rvxi-7q0w.tw3.p5pv.com
-    tls: false
+    port: 8443
+    server: a1393df2-s5cv40-0-m4sq.s5.p5pv.com
+    tls: true
     type: trojan
-  - name: 香港WTT3
+  - name: ChatGPT-02
     type: http
-    server: a5243fee-s4y1s0-s5rvxi-7q0w.wtt5.p5pv.com
-    port: "22443"
+    server: a1393df2-s5cv40-0-m4sq.s5.p5pv.com
+    port: "8443"
     tls: true
   - name: nas1202
     type: http
@@ -91,8 +91,8 @@ proxy-groups:
     proxies:
       - 全球智能
       - 俄罗斯
-      - 香港WTT3
-      - 台湾2
+      - ChatGPT-02
+      - ChatGPT-01
       - CTCC
       - 电信
       - CUCC
@@ -111,9 +111,9 @@ proxy-groups:
       - 联通
       - CMCC
       - 移动
-      - 香港WTT3
+      - ChatGPT-02
       - nas1202
-      - 台湾2
+      - ChatGPT-01
     type: url-test
     url: http://www.gstatic.com/generate_204
 rules:
