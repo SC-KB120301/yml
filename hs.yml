@@ -29,7 +29,7 @@ dns:
 proxies:
   - name: 俄罗斯
     type: http
-    server: 2c60b941-s5cv40-sdkjln-7q16.ru.z7zi.com
+    server: 36867f9f-s5if40-sdkjln-7q16.ru.z7zi.com
     port: "1007"
     tls: true
   - name: 移动
@@ -74,12 +74,12 @@ proxies:
     network: tcp
     password: e89bdcc6-53a5-428c-4bdb-54a4ededd4cc
     port: 8443
-    server: a1393df2-s5cv40-0-m4sq.s5.p5pv.com
+    server: d8f84852-s5if40-sdkjln-7q16.s5.p5pv.com
     tls: true
     type: trojan
   - name: ChatGPT-02
     type: http
-    server: e89bdcc6-53a5-428c-4bdb-54a4ededd4cc
+    server: d8f84852-s5if40-sdkjln-7q16.s5.p5pv.com
     port: "8443"
     tls: true
   - name: nas1202
