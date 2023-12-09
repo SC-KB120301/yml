@@ -34,7 +34,7 @@ proxies:
     tls: true
   - name: 移动
     type: http
-    server: v6.sckb1203.xyz
+    server: 192.168.123.2
     port: "7893"
     username: admin
     password: "901203"
@@ -52,7 +52,7 @@ proxies:
     password: "901203"
   - name: CMCC
     type: socks5
-    server: v6.sckb1203.xyz
+    server: 192.168.123.2
     port: "7893"
     username: admin
     password: "901203"
