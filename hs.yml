@@ -72,7 +72,6 @@ proxies:
     cipher: auto
     name: ChatGPT-01
     network: tcp
-    password: e89bdcc6-53a5-428c-4bdb-54a4ededd4cc
     port: 8443
     server: d8f84852-s5if40-sdkjln-7q16.s5.p5pv.com
     tls: true
