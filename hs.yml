@@ -72,14 +72,14 @@ proxies:
     cipher: auto
     name: ChatGPT-01
     network: tcp
-    password: d9be661e-3031-11ee-8d35-f23c9164ca5d
+    password: e89bdcc6-53a5-428c-4bdb-54a4ededd4cc
     port: 8443
     server: a1393df2-s5cv40-0-m4sq.s5.p5pv.com
     tls: true
     type: trojan
   - name: ChatGPT-02
     type: http
-    server: a1393df2-s5cv40-0-m4sq.s5.p5pv.com
+    server: e89bdcc6-53a5-428c-4bdb-54a4ededd4cc
     port: "8443"
     tls: true
   - name: nas1202
