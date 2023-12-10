@@ -36,8 +36,6 @@ proxies:
     type: http
     server: v6.sckb1203.xyz
     port: "7893"
-    username: admin
-    password: "901203"
   - name: 联通
     type: http
     server: kb1203.myds.me
@@ -54,9 +52,7 @@ proxies:
     type: socks5
     server: v6.sckb1203.xyz
     port: "7893"
-    username: admin
-    password: "901203"
-  - name: CUCC
+    - name: CUCC
     type: socks5
     server: kb1203.myds.me
     port: "7893"
