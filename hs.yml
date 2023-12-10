@@ -36,6 +36,8 @@ proxies:
     type: http
     server: v6.sckb1203.xyz
     port: "7893"
+    username: admin
+    password: "901203"
   - name: 联通
     type: http
     server: kb1203.myds.me
@@ -52,7 +54,9 @@ proxies:
     type: socks5
     server: v6.sckb1203.xyz
     port: "7893"
-    - name: CUCC
+    username: admin
+    password: "901203"
+  - name: CUCC
     type: socks5
     server: kb1203.myds.me
     port: "7893"
@@ -64,37 +68,24 @@ proxies:
     port: "7893"
     username: admin
     password: "901203"
-  - alterId: 0
-    cipher: auto
-    name: ChatGPT-01
-    network: tcp
-    port: 8443
-    server: d8f84852-s5if40-sdkjln-7q16.s5.p5pv.com
-    tls: true
-    type: trojan
-  - name: ChatGPT-02
+  - name: 移动N1
     type: http
-    server: d8f84852-s5if40-sdkjln-7q16.s5.p5pv.com
-    port: "8443"
-    tls: true
-  - name: nas1202
-    type: http
-    server: 192.168.2.205
+    server: 192.168.123.2
     port: "7893"
+    username: admin
+    password: "901203"
 proxy-groups:
   - name: Ghelper
     proxies:
       - 全球智能
       - 俄罗斯
-      - ChatGPT-02
-      - ChatGPT-01
       - CTCC
       - 电信
       - CUCC
       - 联通
       - CMCC
       - 移动
-      - nas1202
+      - 移动N1
     type: select
   - interval: 3600
     name: 全球智能
@@ -106,9 +97,7 @@ proxy-groups:
       - 联通
       - CMCC
       - 移动
-      - ChatGPT-02
-      - nas1202
-      - ChatGPT-01
+      - 移动N1
     type: url-test
     url: http://www.gstatic.com/generate_204
 rules:
