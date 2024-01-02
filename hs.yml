@@ -29,7 +29,7 @@ dns:
 proxies:
   - name: 俄罗斯
     type: http
-    server: ca5b418e-s6fr40-s7h9v8-7q0w.ru.z7zi.com
+    server: ccc8becc-d4f8-11ec-bb74-f23c9164ca5d
     port: "1007"
     tls: true
   - name: 移动
