@@ -77,18 +77,6 @@ dns:
       - 240.0.0.0/4
       - 0.0.0.0/32
 proxies:
-  - name: kb1203-http
-    type: http
-    server: kb1203.myds.me
-    port: 7893
-    username: admin
-    password: "901203"
-  - name: kb1203-scoks5
-    type: socks5
-    server: kb1203.myds.me
-    port: 7893
-    username: admin
-    password: "901203"
   - name: vless.01
     type: vless
     server: acsg3.cloudflarest.link
@@ -102,11 +90,24 @@ proxies:
       headers:
         host: vless.eb13980206608.workers.dev
     client-fingerprint: randomized
-  - name: vless.li940656676.workers.dev
+  - name: vless.li940656676.workers.dev_2
     type: vless
-    server: acsg.cloudflarest.link
+    server: acjp2.cloudflarest.link
     port: 2082
-    uuid: 370356d9-0549-41fb-9cdb-8e885113f327
+    uuid: 1c9a9ebd-6aa8-4dbc-bf4d-ac61262159a8
+    tls: false
+    servername: vless.li940656676.workers.dev
+    network: ws
+    ws-opts:
+      path: /?ed=2048
+      headers:
+        host: vless.li940656676.workers.dev
+    client-fingerprint: randomized
+  - name: vless.li940656676_2
+    type: vless
+    server: acsg3.cloudflarest.link
+    port: 2082
+    uuid: 1c9a9ebd-6aa8-4dbc-bf4d-ac61262159a8
     tls: false
     servername: vless.li940656676.workers.dev
     network: ws
@@ -121,57 +122,51 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - kb1203-http
-      - kb1203-scoks5
       - vless.01
-      - vless.li940656676.workers.dev
+      - vless.li940656676.workers.dev_2
+      - vless.li940656676_2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - kb1203-http
-      - kb1203-scoks5
       - vless.01
-      - vless.li940656676.workers.dev
+      - vless.li940656676.workers.dev_2
+      - vless.li940656676_2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - kb1203-http
-      - kb1203-scoks5
       - vless.01
-      - vless.li940656676.workers.dev
+      - vless.li940656676.workers.dev_2
+      - vless.li940656676_2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - kb1203-http
-      - kb1203-scoks5
       - vless.01
-      - vless.li940656676.workers.dev
+      - vless.li940656676.workers.dev_2
+      - vless.li940656676_2
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - kb1203-http
-      - kb1203-scoks5
       - vless.01
-      - vless.li940656676.workers.dev
+      - vless.li940656676.workers.dev_2
+      - vless.li940656676_2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - kb1203-http
-      - kb1203-scoks5
       - vless.01
-      - vless.li940656676.workers.dev
+      - vless.li940656676.workers.dev_2
+      - vless.li940656676_2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -194,10 +189,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - kb1203-http
-      - kb1203-scoks5
       - vless.01
-      - vless.li940656676.workers.dev
+      - vless.li940656676.workers.dev_2
+      - vless.li940656676_2
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
