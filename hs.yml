@@ -46,7 +46,7 @@ proxies:
     password: "901203"
   - name: 电信
     type: http
-    server: kb1202.myds.me
+    server: dx.sckb1203.xyz
     port: "7893"
     username: admin
     password: "901203"
@@ -64,7 +64,7 @@ proxies:
     password: "901203"
   - name: CTCC
     type: socks5
-    server: kb1202.myds.me
+    server: dx.sckb1203.xyz
     port: "7893"
     username: admin
     password: "901203"
